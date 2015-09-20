@@ -12,11 +12,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Spannable;
 import android.text.SpannableString;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -75,19 +75,15 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
     @Override
     public void onAnimationStart(Animation animation) {
-      // TODO Auto-generated method stub
 
     }
 
     @Override
     public void onAnimationRepeat(Animation animation) {
-      // TODO Auto-generated method stub
-
     }
 
     @Override
     public void onAnimationEnd(Animation animation) {
-      // TODO Auto-generated method stub
       linearViewN.startAnimation(moveCart1);
 
     }
@@ -97,20 +93,15 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
     @Override
     public void onAnimationStart(Animation animation) {
-      // TODO Auto-generated method stub
-
     }
 
     @Override
     public void onAnimationRepeat(Animation animation) {
-      // TODO Auto-generated method stub
 
     }
 
     @Override
     public void onAnimationEnd(Animation animation) {
-      // TODO Auto-generated method stub
-
     }
   };
 
@@ -122,7 +113,6 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
         if (items != null) {
 
-          // Log.i(getClass().getSimpleName(), "OnBackPressed");
           Intent nextIntent = getIntent();
           nextIntent.putExtra("carttext", this.text.getText().toString());
           nextIntent.putExtra("items", items);
@@ -142,7 +132,6 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
     super.onCreate(savedInstanceState);
     setContentView(R.layout.displayitems);
     tff = Typeface.createFromAsset(this.getAssets(), "Sansation_Regular.ttf");
@@ -168,7 +157,6 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
       @Override
       public void onClick(View v) {
-        // TODO Auto-generated method stub
         Intent nextIntent = new Intent(FullItems.this, SearchItems.class);
         nextIntent.putExtra("storeid", storeId);
         nextIntent.putExtra("storename", storeName);
@@ -189,11 +177,9 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
       @Override
       public void onClick(View v) {
-        // TODO Auto-generated method stub
 
         if (items != null && items.length() > 0) {
           Intent nextIntent = new Intent(FullItems.this, SearchItemReview.class);
-          // Log.i(getClass().getSimpleName(), "Items: " + items);
           nextIntent.putExtra("items", items);
           nextIntent.putExtra("storename", storeName);
           nextIntent.putExtra("storeid", storeId);
@@ -310,7 +296,6 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
           return;
         }
       } catch (JSONException e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
@@ -349,24 +334,19 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
   private class TabListner implements ActionBar.TabListener {
 
     @Override
-    public void onTabSelected(Tab tab, FragmentTransaction ft) {
-      // TODO Auto-generated method stub
+    public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
 
       mViewPager.setCurrentItem(tab.getPosition());
 
     }
 
     @Override
-    public void onTabUnselected(Tab tab, FragmentTransaction ft) {
-      // TODO Auto-generated method stub
-
+    public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
       tab.getText();
-      // Log.i(getClass().getSimpleName(), "Tab Text: " + tab.getText());
     }
 
     @Override
-    public void onTabReselected(Tab tab, FragmentTransaction ft) {
-      // TODO Auto-generated method stub
+    public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
 
     }
 
@@ -377,14 +357,9 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
     CategoriesFragment f = (CategoriesFragment) mFragmentManager.findFragmentByTag(tag);
     if (f != null) {
-      // Log.i(getClass().getSimpleName(),
-      // "In the If block of Not null getFragment");
-
     }
 
     if (f == null) {
-      // Log.i(getClass().getSimpleName(),
-      // "In the If block of getFragment");
       f = (CategoriesFragment) CategoriesFragment.newInstance(tag);
 
       Bundle args = new Bundle();
@@ -398,7 +373,7 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
   }
 
   // Fragment Adater for getting the fragments.
-  private class TabPagerAdapter extends FragmentPagerAdapter implements TabListener {
+  private class TabPagerAdapter extends FragmentPagerAdapter implements ActionBar.TabListener {
 
     private FragmentManager fm;
 
@@ -407,15 +382,11 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
     public TabPagerAdapter(FragmentManager fm) {
       super(fm);
       this.fm = fm;
-
-      // TODO Auto-generated constructor stub
     }
 
     @Override
     public Fragment getItem(int arg0) {
-      // TODO Auto-generated method stub
 
-      // Log.i(getClass().getSimpleName(), response);
       Fragment fragment = getFragment(catArray[arg0] + "," + catArrayId[arg0]);
       return fragment;
 
@@ -423,43 +394,34 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
     @Override
     public int getCount() {
-      // TODO Auto-generated method stub
       return mCount;
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
-      // Log.i(getClass().getSimpleName(), "In the PageTitle: " +
-      // position);
       SpannableString s = new SpannableString(catArray[position].toUpperCase());
       s.setSpan(new ActionbarCus("", tff), 0, s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
       return s;
     }
 
     @Override
-    public void onTabSelected(Tab tab, FragmentTransaction ft) {
-      // TODO Auto-generated method stub
-      // Log.i(getClass().getSimpleName(), "In onTabSelected");
+    public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
+
     }
 
     @Override
-    public void onTabUnselected(Tab tab, FragmentTransaction ft) {
-      // TODO Auto-generated method stub
-      // Log.i(getClass().getSimpleName(), "In onTabUnSelected");
+    public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
+
     }
 
     @Override
-    public void onTabReselected(Tab tab, FragmentTransaction ft) {
-      // TODO Auto-generated method stub
+    public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
 
     }
-
   }
 
   public void onSuccessR() {
     try {
-
-      // Log.i(getClass().getSimpleName(), "Response: " + response);
 
       if (new JSONObject(response).getString("status").equalsIgnoreCase("success")
           && new JSONObject(response).getInt("catid") == Integer.valueOf(catId)
@@ -486,37 +448,20 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
           @Override
           public void onPageSelected(int arg0) {
-            // TODO Auto-generated method stub
-
-            // Log.i(getClass().getSimpleName(), "Title: " +
-            // getTitle());
-
           }
 
           @Override
           public void onPageScrolled(int arg0, float arg1, int arg2) {
-            // TODO Auto-generated method stub
-
           }
 
           @Override
           public void onPageScrollStateChanged(int arg0) {
-            // TODO Auto-generated method stub
-
           }
         });
         mIndicator.setViewPager(mViewPager);
 
       }
-      // FullItemsData fullData = gson.fromJson(response,
-      // FullItemsData.class);
-      // if(fullData != null)
-      // {
-      // Log.i(getClass().getSimpleName(), fullData.list.size()+"
-      // items");
-      // }
     } catch (Exception e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
 
     }
@@ -528,25 +473,20 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
       try {
         proD.dismiss();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
     }
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
       try {
         response = new String(arg2, "UTF-8");
-        // Log.i(getClass().getSimpleName(), "Response: " + response);
         try {
           proD.dismiss();
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
 
@@ -575,42 +515,24 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
             @Override
             public void onPageSelected(int arg0) {
-              // TODO Auto-generated method stub
-
-              // Log.i(getClass().getSimpleName(), "Title: " +
-              // getTitle());
-
             }
 
             @Override
             public void onPageScrolled(int arg0, float arg1, int arg2) {
-              // TODO Auto-generated method stub
-
             }
 
             @Override
             public void onPageScrollStateChanged(int arg0) {
-              // TODO Auto-generated method stub
-
             }
           });
           mIndicator.setViewPager(mViewPager);
 
         }
-        // FullItemsData fullData = gson.fromJson(response,
-        // FullItemsData.class);
-        // if(fullData != null)
-        // {
-        // Log.i(getClass().getSimpleName(), fullData.list.size()+"
-        // items");
-        // }
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
         try {
           proD.dismiss();
         } catch (Exception e1) {
-          // TODO Auto-generated catch block
           e1.printStackTrace();
         }
       }
@@ -655,7 +577,6 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
   @Override
   protected void onSaveInstanceState(Bundle outState) {
-    // TODO Auto-generated method stub
     super.onSaveInstanceState(outState);
 
     outState.putString("items", items);
@@ -672,9 +593,7 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
   @Override
   public void passDataToIncrement(String value) {
-    // TODO Auto-generated method stub
     String text = this.text.getText().toString();
-    // Log.i(getClass().getSimpleName(), "Text: " + text);
     int s = Integer.valueOf(text);
     int s1 = Integer.valueOf(value);
 
@@ -684,7 +603,6 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
   @Override
   public void passDataToDecrement(String value) {
-    // TODO Auto-generated method stub
     String text = this.text.getText().toString();
     int s = Integer.valueOf(text);
     int s1 = Integer.valueOf(value);
@@ -695,22 +613,17 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
   @Override
   public void finishActivity() {
-    // TODO Auto-generated method stub
 
   }
 
   @Override
   public void triggerAreas(String city) {
-    // TODO Auto-generated method stub
     items = city;
-    Log.i(getClass().getSimpleName(), "Items are: " + items);
   }
 
   @Override
   public void callBackUpdatedResponse(String response) {
-    // TODO Auto-generated method stub
     updatedResponse = response;
-    // Log.i(getClass().getSimpleName(), "response is: " + response);
   }
 
   @Override
@@ -720,13 +633,11 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
   @Override
   public String getUpdatedItems() {
-    // TODO Auto-generated method stub
     return items;
   }
 
   @Override
   public void updateCart(String text) {
-    // TODO Auto-generated method stub
     Type collectionType = new TypeToken<ArrayList<ItemsQuery>>() {
     }.getType();
     if (itemsSArray != null && itemsSArray.size() > 0)
@@ -744,7 +655,6 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
       this.text.setText("" + itemNumber);
 
-      Log.i(getClass().getSimpleName(), "Item Number is: " + itemNumber);
     } else {
       this.text.setText("0");
     }
@@ -752,7 +662,6 @@ public class FullItems extends AppCompatActivity implements NotifyCallBack {
 
   @Override
   protected void onActivityResult(int arg0, int arg1, Intent arg2) {
-    // TODO Auto-generated method stub
     super.onActivityResult(arg0, arg1, arg2);
     if (arg0 == 1) {
       if (arg2 != null && arg2.hasExtra("updatedJson")) {

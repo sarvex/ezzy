@@ -58,11 +58,9 @@ public class Checkout extends AppCompatActivity {
 
   @Override
   protected void onResume() {
-    // TODO Auto-generated method stub
     super.onResume();
 
     userInfo = pref.getString(Constants.viewuser, "NA");
-    // Log.i(getClass().getSimpleName(), "user Address: " + userInfo);
     shopName.setText(storeName);
     address.setText(storeAddress);
     itemsNumber.setText(totalItems);
@@ -89,7 +87,6 @@ public class Checkout extends AppCompatActivity {
       userMobilenumber.setText("(M) " + msisdn);
 
     } catch (JSONException e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
     }
   }
@@ -99,11 +96,9 @@ public class Checkout extends AppCompatActivity {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
       try {
         proD.dismiss();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
       Toast.makeText(Checkout.this, "Something went wrong", Toast.LENGTH_SHORT).show();
@@ -112,25 +107,19 @@ public class Checkout extends AppCompatActivity {
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
       try {
         proD.dismiss();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
       Toast.makeText(Checkout.this, "Success", Toast.LENGTH_SHORT).show();
 
       try {
         String responseString = new String(arg2, "UTF-8");
-        // Log.i(getClass().getSimpleName(), "Response: " +
-        // responseString);
         Intent nextIntent = new Intent(Checkout.this, ThankYou.class);
         nextIntent.putExtra("orderplace", responseString);
-        // nextIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(nextIntent);
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
     }
@@ -151,15 +140,8 @@ public class Checkout extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
     super.onCreate(savedInstanceState);
     setContentView(R.layout.checkout);
-    // if (USHOP.launch) {
-    //
-    // Intent intent = new Intent(this, SplashScreen.class);
-    // intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    // startActivity(intent);
-    // }
     toolbar = getSupportActionBar();
     ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#25ac52"));
     toolbar.setBackgroundDrawable(colorDrawable);
@@ -188,17 +170,12 @@ public class Checkout extends AppCompatActivity {
       @SuppressWarnings("deprecation")
       @Override
       public void onClick(View v) {
-        // TODO Auto-generated method stub
-
         try {
           String url = "app.orderplace?msisdn=" + pref.getString(Constants.mobile_num, "NA") + "&sid="
               + storeId + "&totprice=" + totalPrice.split(" ")[1] + "&totitems="
               + totalItems.split(" ")[0];
 
-          // Log.i(getClass().getSimpleName(), "URL is: " + url);
           if (updatedJson != null && updatedJson.length() > 0) {
-            // Log.i(getClass().getSimpleName(), "Updated JSON: "
-            // + updatedJson);
             JSONArray jsonArray = new JSONArray(updatedJson);
             JSONArray mainArray = new JSONArray();
             if (jsonArray.length() > 0) {
@@ -215,15 +192,11 @@ public class Checkout extends AppCompatActivity {
                 mainArray.put(subObject);
               }
 
-              // Log.i(getClass().getSimpleName(),
-              // "JSON Array is: "
-              // + mainArray.toString());
               HttpPost httpPost = new HttpPost();
               httpPost.setEntity(new StringEntity(mainArray.toString()));
               try {
                 proD.show();
               } catch (Exception e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
               }
               UShopRestClient.postUAHOY(Checkout.this, url, httpPost.getEntity(), responseHandler);
@@ -231,7 +204,6 @@ public class Checkout extends AppCompatActivity {
 
           }
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
 
@@ -242,7 +214,6 @@ public class Checkout extends AppCompatActivity {
 
       @Override
       public void onClick(View v) {
-        // TODO Auto-generated method stub
         Intent nextIntent = new Intent(Checkout.this, AddAddress.class);
         nextIntent.putExtra("from", "checkout");
         startActivity(nextIntent);

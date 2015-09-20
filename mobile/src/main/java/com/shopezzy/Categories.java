@@ -65,7 +65,6 @@ public class Categories extends AppCompatActivity {
 
   @Override
   protected void onResume() {
-    // TODO Auto-generated method stub
     super.onResume();
 
     Type collectionType = new TypeToken<ArrayList<ItemsQuery>>() {
@@ -90,7 +89,6 @@ public class Categories extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
     super.onCreate(savedInstanceState);
     setContentView(R.layout.gridview);
     gridView = (GridView) findViewById(R.id.gridview);
@@ -141,13 +139,10 @@ public class Categories extends AppCompatActivity {
 
       @Override
       public void onClick(View v) {
-        // TODO Auto-generated method stub
-
         try {
           if (items != null && items.length() > 0 && new JSONArray(items).length() > 0) {
 
             Intent nextIntent = new Intent(Categories.this, SearchItemReview.class);
-            // Log.i(getClass().getSimpleName(), "Items: " + items);
             nextIntent.putExtra("items", items);
             nextIntent.putExtra("storename", storeName);
             nextIntent.putExtra("storeid", storeId);
@@ -159,7 +154,6 @@ public class Categories extends AppCompatActivity {
                 .show();
           }
         } catch (JSONException e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
 
@@ -177,8 +171,6 @@ public class Categories extends AppCompatActivity {
 
       @Override
       public void onClick(View v) {
-        // TODO Auto-generated method stub
-
         Intent nextIntent = new Intent(Categories.this, SearchItems.class);
         nextIntent.putExtra("storeid", storeId);
         nextIntent.putExtra("storename", storeName);
@@ -197,8 +189,6 @@ public class Categories extends AppCompatActivity {
 
       @Override
       public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        // TODO Auto-generated method stub
-
         if (allcat != null) {
           Intent nextIntent = new Intent(Categories.this, FullItems.class);
           nextIntent.putExtra("storeid", storeId);
@@ -226,24 +216,20 @@ public class Categories extends AppCompatActivity {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
       try {
         proD.dismiss();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
     }
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
       try {
         String response = new String(arg2, "UTF-8");
         try {
           proD.dismiss();
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
         if (new JSONObject(response).getString("status").equalsIgnoreCase("Success")) {
@@ -254,8 +240,6 @@ public class Categories extends AppCompatActivity {
           if (new JSONObject(response).getJSONArray("list").length() > 0) {
             allcat = gson.fromJson(new JSONObject(response).getJSONArray("list").toString(),
                 collectionType);
-            // Log.i(getClass().getSimpleName(), "Size is: " +
-            // allcat.size());
             MyCategoryAdapter catAdapter = new MyCategoryAdapter(Categories.this, 0, allcat);
             gridView.setAdapter(catAdapter);
           }
@@ -264,7 +248,6 @@ public class Categories extends AppCompatActivity {
           Toast.makeText(Categories.this, "Something went wrong", Toast.LENGTH_SHORT).show();
         }
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
@@ -283,7 +266,6 @@ public class Categories extends AppCompatActivity {
 
   @Override
   public void onBackPressed() {
-    // TODO Auto-generated method stub
     if (items != null) {
       try {
         if (items.length() > 0 && new JSONArray(items).length() > 0) {
@@ -298,7 +280,6 @@ public class Categories extends AppCompatActivity {
 
             @Override
             public void run() {
-              // TODO Auto-generated method stub
               Intent nextIntent = new Intent(Categories.this, PendingItems.class);
               startActivityForResult(nextIntent, 3);
             }
@@ -307,7 +288,6 @@ public class Categories extends AppCompatActivity {
           Categories.this.finish();
         }
       } catch (JSONException e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
     } else {
@@ -330,7 +310,6 @@ public class Categories extends AppCompatActivity {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-      // TODO Auto-generated method stub
       View rowView = convertView;
       if (rowView == null) {
         LayoutInflater inflater = (LayoutInflater) this.getContext()
@@ -344,26 +323,13 @@ public class Categories extends AppCompatActivity {
 
       }
       final ViewHolder viewHolder = (ViewHolder) rowView.getTag();
-      // viewHolder.countrytxt.setText(list.get(position));
-
-      // i++;
-      // if (i % 2 == 0) {
-      // if (i == 0)
-      // return rowView;
-      //
-      // viewHolder.layout.setBackgroundColor(getResources().getColor(
-      // R.color.black90T));
-      // }
 
       viewHolder.textup.setText(list.get(position).cname);
       viewHolder.textdown.setText(list.get(position).desc);
       try {
         viewHolder.image.setImageDrawable(getDrawableWithName(list.get(position).cid + ""));
 
-//				Picasso.with(Categories.this).load(list.get(position).image).placeholder(R.drawable.offerszone)
-//						.into(viewHolder.image);
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
@@ -380,7 +346,6 @@ public class Categories extends AppCompatActivity {
 
   @Override
   protected void onSaveInstanceState(Bundle outState) {
-    // TODO Auto-generated method stub
     super.onSaveInstanceState(outState);
     outState.putString("items", items);
     outState.putString("carttext", this.text1.getText().toString());
@@ -402,7 +367,6 @@ public class Categories extends AppCompatActivity {
 
   @Override
   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-    // TODO Auto-generated method stub
     super.onActivityResult(requestCode, resultCode, data);
 
     if (resultCode == 1) {
@@ -431,7 +395,6 @@ public class Categories extends AppCompatActivity {
     }
     if (resultCode == 4) {
       if (data != null && data.hasExtra("items")) {
-        // Log.i(getClass().getSimpleName(), "In 1");
         this.text = data.getStringExtra("carttext");
         items = data.getStringExtra("items");
         updatedResponse = data.getStringExtra("updatedresponse");

@@ -39,7 +39,6 @@ public class IntroScreen extends AppCompatActivity {
 
   @Override
   protected void onStart() {
-    // TODO Auto-generated method stub
     super.onStart();
     AHTracker.getInstance().setModule("shopezzy").setApiKey(Constants.analytics_key)
         .setPageName(getClass().getSimpleName()).startSession(IntroScreen.this);
@@ -47,14 +46,12 @@ public class IntroScreen extends AppCompatActivity {
 
   @Override
   protected void onStop() {
-    // TODO Auto-generated method stub
     super.onStop();
     AHTracker.getInstance().stopSession(this);
   }
 
   @Override
   protected void onCreate(Bundle arg0) {
-    // TODO Auto-generated method stub
     super.onCreate(arg0);
 
     toolbar = getSupportActionBar();
@@ -62,26 +59,15 @@ public class IntroScreen extends AppCompatActivity {
 
     setContentView(R.layout.ushop_introscreen);
 
-//		if (USHOP.launch) {
-//
-//			Intent intent = new Intent(this, SplashScreen.class);
-//			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//			startActivity(intent);
-//		}
     pager = (ViewPager) findViewById(R.id.pager);
     mIndicator = (CirclePageIndicator) findViewById(R.id.indicator);
     textIntro1 = (TextView) findViewById(R.id.text1);
     textIntro2 = (TextView) findViewById(R.id.text2);
     textskip = (TextView) findViewById(R.id.text3);
-    // if (getIntent().hasExtra(Constants.from_where)) {
-    // fromWhere = getIntent().getStringExtra(Constants.from_where);
-    // }
     textskip.setOnClickListener(new OnClickListener() {
 
       @Override
       public void onClick(View v) {
-        // TODO Auto-generated method stub
-
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(IntroScreen.this);
         pref.edit().putBoolean(Constants.pref_gotit, true).commit();
 
@@ -100,19 +86,15 @@ public class IntroScreen extends AppCompatActivity {
 
       @Override
       public void onPageSelected(int arg0) {
-        // TODO Auto-generated method stub
         initTextAtPosition(arg0);
       }
 
       @Override
       public void onPageScrolled(int arg0, float arg1, int arg2) {
-        // TODO Auto-generated method stub
-
       }
 
       @Override
       public void onPageScrollStateChanged(int arg0) {
-        // TODO Auto-generated method stub
 
       }
     });
@@ -123,11 +105,9 @@ public class IntroScreen extends AppCompatActivity {
     String text2 = text2A[var1];
 
     if (text1 == null) {
-      // Log.i(getClass().getSimpleName(), "It is Null");
     }
 
     if (this.textIntro1 == null) {
-      // Log.i(getClass().getSimpleName(), "It is Null textIntro1");
     }
     this.textIntro1.setText(text1);
 
@@ -156,7 +136,6 @@ public class IntroScreen extends AppCompatActivity {
 
     @Override
     public Object instantiateItem(View container, int position) {
-      // TODO Auto-generated method stub
       if (position >= this.mImagesArray.size()) {
         return null;
       } else {
@@ -176,19 +155,16 @@ public class IntroScreen extends AppCompatActivity {
 
     @Override
     public void destroyItem(View container, int position, Object object) {
-      // TODO Auto-generated method stub
       ((ViewPager) container).removeView((View) object);
     }
 
     @Override
     public int getCount() {
-      // TODO Auto-generated method stub
       return this.mImagesArray.size();
     }
 
     @Override
     public boolean isViewFromObject(View arg0, Object arg1) {
-      // TODO Auto-generated method stub
       return arg0.equals(arg1);
     }
 
@@ -196,13 +172,11 @@ public class IntroScreen extends AppCompatActivity {
 
   @Override
   protected void onResume() {
-    // TODO Auto-generated method stub
     super.onResume();
   }
 
   @Override
   protected void onPause() {
-    // TODO Auto-generated method stub
     super.onPause();
   }
 

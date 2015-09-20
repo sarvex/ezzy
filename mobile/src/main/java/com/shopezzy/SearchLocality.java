@@ -15,6 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Toolbar;
 
 import com.google.gson.Gson;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -33,7 +34,7 @@ public class SearchLocality extends AppCompatActivity implements SearchView.OnQu
   private SearchView mSearchView;
   private ListView mListView;
   private ArrayAdapter<String> mAdapter;
-  private ActionBar mActionBar;
+  private Toolbar toolbar;
   private android.widget.TextView text, title;
   private ImageView searchView;
   private ImageView searchCloseIcon, searchHintIcon;
@@ -59,20 +60,12 @@ public class SearchLocality extends AppCompatActivity implements SearchView.OnQu
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
     super.onCreate(savedInstanceState);
     setContentView(R.layout.searchlocality);
 
-    // if (USHOP.launch) {
-    //
-    // Intent intent = new Intent(this, SplashScreen.class);
-    // intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    // startActivity(intent);
-    // }
-
     pref = PreferenceManager.getDefaultSharedPreferences(this);
-    mActionBar = getSupportActionBar();
-    mActionBar.hide();
+    toolbar = getSupportActionBar();
+    toolbar.hide();
     proD = new ProgressDialog(SearchLocality.this);
     proD.setMessage("Fetching available stores...");
     proD.setCancelable(false);
@@ -103,7 +96,6 @@ public class SearchLocality extends AppCompatActivity implements SearchView.OnQu
 
       @Override
       public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        // TODO Auto-generated method stub
         Locality locality = SearchLocality.this.searchAdapter.locality.get(position);
         selectedArea = locality.name;
         selectedPin = locality.pin;
@@ -115,7 +107,6 @@ public class SearchLocality extends AppCompatActivity implements SearchView.OnQu
     setupSearchView();
     selectedCity = getIntent().getStringExtra("selectedcity");
     selectedPin = getIntent().getStringExtra("pin");
-    // Log.i(getClass().getSimpleName(), "PIN: " + selectedPin);
     localities = gson.fromJson(getIntent().getStringExtra("localities"), CityLocality.class);
     ArrayList<Locality> allLoca = localities.localities;
     searchAdapter = new CitySelection().new MySpinnerAdapter(this, 0, allLoca);
@@ -131,11 +122,9 @@ public class SearchLocality extends AppCompatActivity implements SearchView.OnQu
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
       try {
         proD.dismiss();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
@@ -143,7 +132,6 @@ public class SearchLocality extends AppCompatActivity implements SearchView.OnQu
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
       try {
         String response = new String(arg2, "UTF-8");
         JSONObject jsonObject = new JSONObject(response);
@@ -175,12 +163,9 @@ public class SearchLocality extends AppCompatActivity implements SearchView.OnQu
           Gson gson = new Gson();
           final String json = gson.toJson(totalStores);
 
-          // Log.i(getClass().getSimpleName(), "J-**" + json + "--"
-          // + stores.size());
           try {
             proD.dismiss();
           } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
           }
 
@@ -188,7 +173,6 @@ public class SearchLocality extends AppCompatActivity implements SearchView.OnQu
 
             @Override
             public void run() {
-              // TODO Auto-generated method stub
               Intent nextIntent = new Intent(SearchLocality.this, PickStore.class);
               nextIntent.putExtra("stores", json);
 
@@ -203,7 +187,6 @@ public class SearchLocality extends AppCompatActivity implements SearchView.OnQu
         }
 
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
@@ -213,13 +196,11 @@ public class SearchLocality extends AppCompatActivity implements SearchView.OnQu
 
   @Override
   protected void onResume() {
-    // TODO Auto-generated method stub
     super.onResume();
   }
 
   @Override
   protected void onPause() {
-    // TODO Auto-generated method stub
     super.onPause();
     this.searchAdapter.locality.clear();
     this.searchAdapter.locality.addAll(localityLocal);
@@ -228,22 +209,15 @@ public class SearchLocality extends AppCompatActivity implements SearchView.OnQu
 
   @Override
   public boolean onQueryTextSubmit(String query) {
-    // TODO Auto-generated method stub
     return false;
   }
 
   @Override
   public boolean onQueryTextChange(String newText) {
-    // TODO Auto-generated method stub
 
     if (localities != null && localities.localities != null && localities.localities.size() > 0) {
       localities.localities.clear();
       localities.localities.addAll(localityLocal);
-      // Log.i(getClass().getSimpleName(),
-      // "Size: " + localities.localities.size() + "-"
-      // + localityLocal.size() + "-"
-      // + searchAdapter.locality.size());
-      // SearchLocality.this.searchAdapter.notifyDataSetChanged();
       if (newText.length() == 0) {
         SearchLocality.this.searchAdapter.notifyDataSetChanged();
         return true;

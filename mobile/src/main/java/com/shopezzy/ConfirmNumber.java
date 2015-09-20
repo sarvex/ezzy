@@ -39,7 +39,6 @@ public class ConfirmNumber extends AppCompatActivity {
 
   @Override
   protected void onStart() {
-    // TODO Auto-generated method stub
     super.onStart();
     AHTracker.getInstance().setModule("shopezzy").setApiKey(Constants.analytics_key)
         .setPageName(getClass().getSimpleName()).startSession(this);
@@ -47,24 +46,15 @@ public class ConfirmNumber extends AppCompatActivity {
 
   @Override
   protected void onStop() {
-    // TODO Auto-generated method stub
     super.onStop();
     AHTracker.getInstance().stopSession(this);
   }
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
     super.onCreate(savedInstanceState);
     getWindow().requestFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
     setContentView(R.layout.confirmyournumber);
-
-    // if (USHOP.launch) {
-    //
-    // Intent intent = new Intent(this, SplashScreen.class);
-    // intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    // startActivity(intent);
-    // }
 
     toolbar = getSupportActionBar();
 
@@ -90,7 +80,6 @@ public class ConfirmNumber extends AppCompatActivity {
           pref.getString(Constants.mobile_num, "NA").length())
           + "\nTo confirm your code, enter the code below");
     } catch (Exception e1) {
-      // TODO Auto-generated catch block
       e1.printStackTrace();
     }
 
@@ -106,13 +95,11 @@ public class ConfirmNumber extends AppCompatActivity {
 
       @Override
       public void onClick(View v) {
-        // TODO Auto-generated method stub
 
         if (editText.getText() != null && editText.getText().length() > 0) {
           try {
             confirmMobileNumber(editText.getText().toString());
           } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
           }
         } else {
@@ -120,7 +107,6 @@ public class ConfirmNumber extends AppCompatActivity {
             Toast.makeText(ConfirmNumber.this, "Kindly Enter Your Confirmation Code", Toast.LENGTH_SHORT)
                 .show();
           } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
           }
         }
@@ -134,23 +120,13 @@ public class ConfirmNumber extends AppCompatActivity {
 
       @Override
       public void onClick(View v) {
-        // TODO Auto-generated method stub
-
         String url = "register?msisdn=" + pref.getString(Constants.mobile_num, "NA") + "&deviceid="
             + getAndroidID() + "&src=" + getApplication().getPackageName() + "&email="
             + getEmail(ConfirmNumber.this);
 
-        // String url =
-        // "oauth/generate?apikey=05e4baa076ff08c3639ccb0a62c0c150&src="
-        // + getApplication().getPackageName()
-        // + "&msisdn="
-        // + pref.getString(Constants.mobile_num, "NA")
-        // + "&mode=0&apv=1.0";
-
         try {
           proD.show();
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
         UShopRestClient.getUAHOY(ConfirmNumber.this, url, null, responseHandlerResend);
@@ -162,7 +138,6 @@ public class ConfirmNumber extends AppCompatActivity {
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
 
       try {
         String response = new String(arg2, "UTF-8");
@@ -170,17 +145,13 @@ public class ConfirmNumber extends AppCompatActivity {
         try {
           proD.dismiss();
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
-        // Log.i(getClass().getSimpleName(), "Response: " + response);
         if (response.trim().equalsIgnoreCase("success")) {
           new Handler().postDelayed(new Runnable() {
 
             @Override
             public void run() {
-              // TODO Auto-generated method stub
-
             }
           }, 500);
 
@@ -189,17 +160,14 @@ public class ConfirmNumber extends AppCompatActivity {
             Toast.makeText(ConfirmNumber.this, "Something went wrong. Please try again", Toast.LENGTH_SHORT)
                 .show();
           } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
           }
         }
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
         try {
           proD.dismiss();
         } catch (Exception e1) {
-          // TODO Auto-generated catch block
           e1.printStackTrace();
         }
       }
@@ -207,20 +175,17 @@ public class ConfirmNumber extends AppCompatActivity {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
       arg3.printStackTrace();
 
       try {
         proD.dismiss();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
       try {
         Toast.makeText(ConfirmNumber.this, "Something went wrong. Please try again", Toast.LENGTH_SHORT).show();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
@@ -260,16 +225,9 @@ public class ConfirmNumber extends AppCompatActivity {
   public void confirmMobileNumber(String otpCode) {
 
     String url = "verifyotp?msisdn=" + pref.getString(Constants.mobile_num, "NA") + "&otp=" + otpCode;
-    //
-    // String url =
-    // "oauth/verify?apikey=05e4baa076ff08c3639ccb0a62c0c150&msisdn="
-    // + pref.getString(Constants.mobile_num, "NA")
-    // + "&auth="
-    // + otpCode + "&apv=1.0";
     try {
       proD.show();
     } catch (Exception e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
     }
     UShopRestClient.getUAHOY(ConfirmNumber.this, url, null, responseHandler);
@@ -281,21 +239,16 @@ public class ConfirmNumber extends AppCompatActivity {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
-      // Toast.makeText(ConfirmNumber.this, "Something went wrong.",
-      // Toast.LENGTH_SHORT).show();
 
       try {
         proD.dismiss();
       } catch (Exception e1) {
-        // TODO Auto-generated catch block
         e1.printStackTrace();
       }
       new Handler().postDelayed(new Runnable() {
 
         @Override
         public void run() {
-          // TODO Auto-generated method stub
           ConfirmNumber.this.finish();
         }
       }, 200);
@@ -306,19 +259,16 @@ public class ConfirmNumber extends AppCompatActivity {
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
       try {
         String responseString = new String(arg2, "UTF-8");
 
         JSONObject jsonObject = new JSONObject(responseString);
         if (jsonObject.getString("status").equalsIgnoreCase("success")
             && jsonObject.getString("name").length() > 0) {
-          // Log.i(getClass().getSimpleName(), "Commited");
           pref.edit().putString(Constants.viewuser, responseString).commit();
           try {
             proD.dismiss();
           } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
           }
 
@@ -326,7 +276,6 @@ public class ConfirmNumber extends AppCompatActivity {
 
             @Override
             public void run() {
-              // TODO Auto-generated method stub
               ConfirmNumber.this.finish();
             }
           }, 200);
@@ -338,7 +287,6 @@ public class ConfirmNumber extends AppCompatActivity {
 
             @Override
             public void run() {
-              // TODO Auto-generated method stub
               ConfirmNumber.this.finish();
             }
           }, 200);
@@ -347,19 +295,15 @@ public class ConfirmNumber extends AppCompatActivity {
           startActivity(nextIntent);
         }
       } catch (Exception e) {
-        // TODO Auto-generated catch block
-
         try {
           proD.dismiss();
         } catch (Exception e1) {
-          // TODO Auto-generated catch block
           e1.printStackTrace();
         }
         new Handler().postDelayed(new Runnable() {
 
           @Override
           public void run() {
-            // TODO Auto-generated method stub
             ConfirmNumber.this.finish();
           }
         }, 200);
@@ -378,20 +322,16 @@ public class ConfirmNumber extends AppCompatActivity {
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
 
       try {
         String response = new String(arg2, "UTF-8");
-        // Log.i(getClass().getSimpleName(), "---" + response);
         if (response.trim().equalsIgnoreCase("Verified")) {
           pref.edit().putString(Constants.otp_status, "verified").commit();
 
           try {
             Toast.makeText(ConfirmNumber.this, response, Toast.LENGTH_SHORT).show();
-            // proD.dismiss();
             proD.setMessage("Loading...");
           } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
           }
 
@@ -399,36 +339,21 @@ public class ConfirmNumber extends AppCompatActivity {
               "app.viewUser?msisdn=" + pref.getString(Constants.mobile_num, "NA"), null,
               responseHandlerUser);
 
-          // new Handler().postDelayed(new Runnable() {
-          //
-          // @Override
-          // public void run() {
-          // // TODO Auto-generated method stub
-          // ConfirmNumber.this.finish();
-          // }
-          // }, 200);
-          //
-          // Intent nextIntent = new Intent(ConfirmNumber.this,
-          // CitySelection.class);
-          // startActivity(nextIntent);
         } else {
           Toast.makeText(ConfirmNumber.this, response, Toast.LENGTH_SHORT).show();
           try {
             proD.dismiss();
           } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
           }
         }
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
         try {
           proD.dismiss();
           Toast.makeText(ConfirmNumber.this, "Something went wrong. Please try again", Toast.LENGTH_SHORT)
               .show();
         } catch (Exception e1) {
-          // TODO Auto-generated catch block
           e1.printStackTrace();
         }
       }
@@ -436,13 +361,10 @@ public class ConfirmNumber extends AppCompatActivity {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
-
       arg3.printStackTrace();
       try {
         proD.dismiss();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
     }
@@ -450,19 +372,15 @@ public class ConfirmNumber extends AppCompatActivity {
 
   @Override
   protected void onPause() {
-    // TODO Auto-generated method stub
     super.onPause();
   }
 
   @Override
   protected void onResume() {
-    // TODO Auto-generated method stub
     super.onResume();
     try {
-      // Log.i(getClass().getSimpleName(), "In the resume page");
       if (getIntent().hasExtra("confirmationCode")) {
         String code = getIntent().getExtras().getString("confirmationCode");
-        // Log.i(getClass().getSimpleName(), "Code is: "+code);
         String codeF = String.valueOf(code);
         if (codeF.length() == 4) {
           editText.setText(codeF);
@@ -472,7 +390,6 @@ public class ConfirmNumber extends AppCompatActivity {
       }
 
     } catch (Exception e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
     }
   }

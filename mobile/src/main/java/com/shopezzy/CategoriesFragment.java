@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -67,7 +66,6 @@ public class CategoriesFragment extends Fragment {
   void addItemsSArray(int position, int id, int count) {
 
     if (count == 0) {
-//			 Log.i(getClass().getSimpleName(), "Count is zero");
       Iterator<ItemsQuery> iterateItems = itemsSArray.iterator();
       int k1 = 0;
       outer:
@@ -89,14 +87,12 @@ public class CategoriesFragment extends Fragment {
 
     for (int i = 0; i < itemsSArray.size(); i++) {
 
-      // Log.i(getClass().getSimpleName(), "Here in for loop");
       if (Integer.valueOf(itemsSArray.get(i).itemId) == id) {
         itemsSArray.get(i).itemNumber = count + "";
         break;
       }
 
       if (i + 1 == itemsSArray.size()) {
-        // Log.i(getClass().getSimpleName(), "i-1");
         ItemsQuery itemsQu = new SearchItems().new ItemsQuery();
         itemsQu.itemId = fullList.get(position).packings.get(0).packid + "";
         itemsQu.itemImage = fullList.get(position).image;
@@ -112,7 +108,6 @@ public class CategoriesFragment extends Fragment {
     }
 
     if (itemsSArray.size() == 0) {
-      // Log.i(getClass().getSimpleName(), "i == 0");
       ItemsQuery itemsQu = new SearchItems().new ItemsQuery();
       itemsQu.itemId = fullList.get(position).packings.get(0).packid + "";
       itemsQu.itemImage = fullList.get(position).image;
@@ -135,25 +130,19 @@ public class CategoriesFragment extends Fragment {
 
     @Override
     public void onAnimationStart(Animation animation) {
-      // TODO Auto-generated method stub
       if (imageW != null) {
-        // Log.i(getClass().getSimpleName(), "ImageW is not null");
-        // imageW.setVisibility(View.VISIBLE);
       } else {
-        // Log.i(getClass().getSimpleName(), "ImageW is null");
       }
 
     }
 
     @Override
     public void onAnimationRepeat(Animation animation) {
-      // TODO Auto-generated method stub
 
     }
 
     @Override
     public void onAnimationEnd(Animation animation) {
-      // TODO Auto-generated method stub
       linearViewN.startAnimation(moveCart1);
 
     }
@@ -163,26 +152,19 @@ public class CategoriesFragment extends Fragment {
 
     @Override
     public void onAnimationStart(Animation animation) {
-      // TODO Auto-generated method stub
       if (imageW != null) {
-        // Log.i(getClass().getSimpleName(), "ImageW is not null");
-        // imageW.setVisibility(View.VISIBLE);
       } else {
-        // Log.i(getClass().getSimpleName(), "ImageW is null");
       }
 
     }
 
     @Override
     public void onAnimationRepeat(Animation animation) {
-      // TODO Auto-generated method stub
 
     }
 
     @Override
     public void onAnimationEnd(Animation animation) {
-      // TODO Auto-generated method stub
-
     }
   };
 
@@ -200,16 +182,12 @@ public class CategoriesFragment extends Fragment {
 
   @Override
   public void onAttach(Activity activity) {
-    // TODO Auto-generated method stub
     super.onAttach(activity);
-    // Log.i(getClass().getSimpleName(), "Attached to Activity");
   }
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
     super.onCreate(savedInstanceState);
-    // Log.i(getClass().getSimpleName(), "OnCreate");
     MoreItems.notify = notify;
     category = getArguments().getString("category").split(",")[0];
     categoryId = getArguments().getString("category").split(",")[1];
@@ -223,29 +201,18 @@ public class CategoriesFragment extends Fragment {
 
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
-    // Log.i(getClass().getSimpleName(), "Here...View");
-
     if (notify != null && notify.getUpdatedItems() != null) {
-      // Log.i(getClass().getSimpleName(), "saveinstanceinstate");
-      // allItems = notify.getUpdatedResponse();
-      // Log.i(getClass().getSimpleName(), "Items in CreateView: " +
-      // notify.getUpdatedItems());
       Type collectionType = new TypeToken<ArrayList<ItemsQuery>>() {
       }.getType();
       itemsSArray = gson.fromJson(notify.getUpdatedItems(), collectionType);
 
-      // Log.i(getClass().getSimpleName(), "Items Size: " +
-      // itemsSArray.size());
     }
     if (view == null) {
-      // Log.i(getClass().getSimpleName(), "If");
       view = inflater.inflate(R.layout.fullitems, container, false);
       view.setBackgroundColor(Color.WHITE);
       listview = (ListView) view.findViewById(R.id.catlist);
     } else {
 
-      // Log.i(getClass().getSimpleName(), "Else");
       ((ViewGroup) view.getParent()).removeView(view);
     }
 
@@ -254,9 +221,7 @@ public class CategoriesFragment extends Fragment {
 
   @Override
   public void onResume() {
-    // TODO Auto-generated method stub
     super.onResume();
-//		Log.i(getClass().getSimpleName(), "in OnResume");
     if (categoryAdapter != null) {
 
       if (notify != null && notify.getUpdatedItems() != null) {
@@ -265,10 +230,6 @@ public class CategoriesFragment extends Fragment {
         Type collectionType = new TypeToken<ArrayList<ItemsQuery>>() {
         }.getType();
         itemsSArray = gson.fromJson(notify.getUpdatedItems(), collectionType);
-
-        // Log.i(getClass().getSimpleName(), "in onResume the size is: "
-        // + itemsSArray.size());
-
       }
       categoryAdapter.notifyDataSetChanged();
     }
@@ -277,10 +238,8 @@ public class CategoriesFragment extends Fragment {
 
   @Override
   public void onActivityResult(int requestCode, int resultCode, Intent data) {
-    // TODO Auto-generated method stub
     super.onActivityResult(requestCode, resultCode, data);
     if (requestCode == 1) {
-//			Log.i(getClass().getSimpleName(), "In The Result");
       if (data != null && data.hasExtra("position")) {
         index = data.getIntExtra("position", 0);
         beforepos = data.getIntExtra("beforepos", 0);
@@ -292,13 +251,9 @@ public class CategoriesFragment extends Fragment {
 
   @Override
   public void onActivityCreated(Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
     super.onActivityCreated(savedInstanceState);
     if (!loaded) {
       loaded = true;
-
-      // Log.i(getClass().getSimpleName(), "Response: ****");
-
       moveCart = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.zoomin);
       moveCart.setAnimationListener(listener);
       moveCart1 = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.zoomout);
@@ -320,16 +275,12 @@ public class CategoriesFragment extends Fragment {
 
       if (fullList != null) {
 
-//				Log.i(getClass().getSimpleName(), "Size is: " + fullList.size());
         categoryAdapter = new CategorySubAdapter(getActivity(), 0, fullList);
         listview.setAdapter(categoryAdapter);
         listview.setOnItemClickListener(new OnItemClickListener() {
 
           @Override
           public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            // TODO Auto-generated method stub
-            Log.i(getClass().getSimpleName(), "Here....");
-
             Intent nextIntent = new Intent(getActivity(), MoreItems.class);
             nextIntent.putExtra("fullitems", gson.toJson(fullList).toString());
             nextIntent.putExtra("position", position);
@@ -358,7 +309,6 @@ public class CategoriesFragment extends Fragment {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-      // TODO Auto-generated method stub
       View rowView = convertView;
       if (rowView == null) {
         LayoutInflater inflater = (LayoutInflater) this.getContext()
@@ -381,9 +331,6 @@ public class CategoriesFragment extends Fragment {
       }
 
       final ViewHolder viewHolder = (ViewHolder) rowView.getTag();
-      ;
-      // Log.i(getClass().getSimpleName(), "Here..**" +
-      // list.get(position));
 
       if (beforepos != -1 && beforepos == position) {
         viewHolder.itemName.setText(list.get(position).item);
@@ -425,7 +372,6 @@ public class CategoriesFragment extends Fragment {
           Picasso.with(getActivity()).load(list.get(position).image).placeholder(R.drawable.default_image)
               .into(viewHolder.image1);
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
         viewHolder.up.setOnClickListener(new OnClickListener() {
@@ -451,9 +397,6 @@ public class CategoriesFragment extends Fragment {
             if (notify != null)
               notify.passDataToIncrement("1");
 
-            // Log.i(getClass().getSimpleName(), "Size in viewholder
-            // up:
-            // " + itemsSArray.size());
             linearViewN.startAnimation(moveCart);
             addItemsSArray(position, list.get(position).packings.get(index).packid, main);
 
@@ -478,13 +421,10 @@ public class CategoriesFragment extends Fragment {
 //								viewHolder.count.setTextColor(getResources().getColor(R.color.grey));
               }
             } catch (NumberFormatException e1) {
-              // TODO Auto-generated catch block
               e1.printStackTrace();
             } catch (NotFoundException e1) {
-              // TODO Auto-generated catch block
               e1.printStackTrace();
             } catch (Exception e) {
-              // TODO: handle exception
             }
 
           }
@@ -515,8 +455,6 @@ public class CategoriesFragment extends Fragment {
                 notify.passDataToDecrement("1");
               linearViewN.startAnimation(moveCart);
               viewHolder.count.setText("" + main);
-//							Log.i(getClass().getSimpleName(),
-//									"In the If before additems: " + list.get(position).packings.get(index).packid+"--"+main);
               addItemsSArray(position, list.get(position).packings.get(index).packid, main);
               if (notify != null) {
                 notify.triggerAreas(gson.toJson(itemsSArray));
@@ -534,13 +472,10 @@ public class CategoriesFragment extends Fragment {
 //								viewHolder.count.setTextColor(getResources().getColor(R.color.grey));
               }
             } catch (NumberFormatException e1) {
-              // TODO Auto-generated catch block
               e1.printStackTrace();
             } catch (NotFoundException e1) {
-              // TODO Auto-generated catch block
               e1.printStackTrace();
             } catch (Exception e) {
-              // TODO: handle exception
             }
 
           }
@@ -585,7 +520,6 @@ public class CategoriesFragment extends Fragment {
           Picasso.with(getActivity()).load(list.get(position).image).placeholder(R.drawable.default_image)
               .into(viewHolder.image1);
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
         viewHolder.up.setOnClickListener(new OnClickListener() {
@@ -611,9 +545,6 @@ public class CategoriesFragment extends Fragment {
             if (notify != null)
               notify.passDataToIncrement("1");
 
-            // Log.i(getClass().getSimpleName(), "Size in viewholder
-            // up:
-            // " + itemsSArray.size());
             linearViewN.startAnimation(moveCart);
             addItemsSArray(position, list.get(position).packings.get(0).packid, main);
 
@@ -638,13 +569,10 @@ public class CategoriesFragment extends Fragment {
 //								viewHolder.count.setTextColor(getResources().getColor(R.color.grey));
               }
             } catch (NumberFormatException e1) {
-              // TODO Auto-generated catch block
               e1.printStackTrace();
             } catch (NotFoundException e1) {
-              // TODO Auto-generated catch block
               e1.printStackTrace();
             } catch (Exception e) {
-              // TODO: handle exception
             }
 
           }
@@ -692,13 +620,10 @@ public class CategoriesFragment extends Fragment {
 //								viewHolder.count.setTextColor(getResources().getColor(R.color.grey));
               }
             } catch (NumberFormatException e1) {
-              // TODO Auto-generated catch block
               e1.printStackTrace();
             } catch (NotFoundException e1) {
-              // TODO Auto-generated catch block
               e1.printStackTrace();
             } catch (Exception e) {
-              // TODO: handle exception
             }
 
           }

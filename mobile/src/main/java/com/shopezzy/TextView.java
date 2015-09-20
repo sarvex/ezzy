@@ -7,35 +7,34 @@ import android.util.AttributeSet;
 
 public class TextView extends android.widget.TextView {
 
-	public TextView(Context context, AttributeSet attrs) {
-		super(context, attrs);
-		// TODO Auto-generated constructor stub
-		TypedArray a = context.obtainStyledAttributes(attrs,
-				R.styleable.MyComponent, 0, 0);
-		String fontType = a.getString(R.styleable.MyComponent_font);
-		init(fontType);
-	}
+  public TextView(Context context, AttributeSet attrs) {
+    super(context, attrs);
+    TypedArray a = context.obtainStyledAttributes(attrs,
+        R.styleable.MyComponent, 0, 0);
+    String fontType = a.getString(R.styleable.MyComponent_font);
+    init(fontType);
+  }
 
-	public TextView(Context context, AttributeSet attrs, int defStyle) {
-		super(context, attrs, defStyle);
-		TypedArray a = context.obtainStyledAttributes(attrs,
-				R.styleable.MyComponent, 0, 0);
-		String fontType = a.getString(R.styleable.MyComponent_font);
-		init(fontType);
-	}
+  public TextView(Context context, AttributeSet attrs, int defStyle) {
+    super(context, attrs, defStyle);
+    TypedArray a = context.obtainStyledAttributes(attrs,
+        R.styleable.MyComponent, 0, 0);
+    String fontType = a.getString(R.styleable.MyComponent_font);
+    init(fontType);
+  }
 
-	public TextView(Context context) {
-		super(context);
+  public TextView(Context context) {
+    super(context);
 
-	}
+  }
 
-	private void init(String fontTpe) {
-		if (!isInEditMode()) {
+  private void init(String fontTpe) {
+    if (!isInEditMode()) {
 
-			Typeface tf = Typeface.createFromAsset(getContext().getAssets(),
-					fontTpe);
-			setTypeface(tf);
-		}
-	}
+      Typeface tf = Typeface.createFromAsset(getContext().getAssets(),
+          fontTpe);
+      setTypeface(tf);
+    }
+  }
 
 }

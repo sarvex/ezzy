@@ -78,19 +78,16 @@ public class AddAddress extends AppCompatActivity {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
       try {
         proD.dismiss();
         Toast.makeText(AddAddress.this, "Something went wrong.", Toast.LENGTH_SHORT).show();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
     }
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
       try {
         String responseString = new String(arg2, "UTF-8");
         JSONObject jsonObject = new JSONObject(responseString);
@@ -122,7 +119,6 @@ public class AddAddress extends AppCompatActivity {
 
         proD.dismiss();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         proD.dismiss();
         e.printStackTrace();
         Toast.makeText(AddAddress.this, "Something went wrong.", Toast.LENGTH_SHORT).show();
@@ -136,12 +132,10 @@ public class AddAddress extends AppCompatActivity {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
       try {
         proD.dismiss();
         Toast.makeText(AddAddress.this, "Something went wrong", Toast.LENGTH_SHORT).show();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
@@ -149,7 +143,6 @@ public class AddAddress extends AppCompatActivity {
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
       try {
         String responseString = new String(arg2, "UTF-8");
         if (responseString.trim().equalsIgnoreCase("update")) {
@@ -157,7 +150,6 @@ public class AddAddress extends AppCompatActivity {
 
             @Override
             public void run() {
-              // TODO Auto-generated method stub
               UShopRestClient.getUAHOY(AddAddress.this,
                   "app.viewUser?msisdn=" + pref.getString(Constants.mobile_num, "NA"), null,
                   responseHandlerUser);
@@ -191,12 +183,10 @@ public class AddAddress extends AppCompatActivity {
         }
 
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
         try {
           proD.dismiss();
         } catch (Exception e1) {
-          // TODO Auto-generated catch block
           e1.printStackTrace();
         }
       }
@@ -218,7 +208,6 @@ public class AddAddress extends AppCompatActivity {
 
   @Override
   protected void onSaveInstanceState(Bundle outState) {
-    // TODO Auto-generated method stub
     super.onSaveInstanceState(outState);
     try {
       outState.putString("hname", hname.getText().toString());
@@ -226,22 +215,14 @@ public class AddAddress extends AppCompatActivity {
       outState.putString("streat", streat.getText().toString());
       outState.putString("email", email.getText().toString());
     } catch (Exception e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
     }
   }
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
     super.onCreate(savedInstanceState);
     setContentView(R.layout.shippingaddress);
-    // if (USHOP.launch) {
-    //
-    // Intent intent = new Intent(this, SplashScreen.class);
-    // intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    // startActivity(intent);
-    // }
     pref = PreferenceManager.getDefaultSharedPreferences(this);
     toolbar = getSupportActionBar();
     ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#25ac52"));
@@ -289,12 +270,7 @@ public class AddAddress extends AppCompatActivity {
     email.setTypeface(tff);
     done = (RelativeLayout) findViewById(R.id.done);
 
-    if (!viewUser.equalsIgnoreCase("NA"))
-
-    {
-
-      // Log.i(getClass().getSimpleName(), "viewuser: " + viewUser);
-
+    if (!viewUser.equalsIgnoreCase("NA")) {
       if (savedInstanceState != null) {
         hname.setText(savedInstanceState.getString("hname"));
         hnumber.setText(savedInstanceState.getString("hname"));
@@ -309,18 +285,9 @@ public class AddAddress extends AppCompatActivity {
             streat.setText(new JSONObject(viewUser).getString("add2").toString());
           }
         } catch (JSONException e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
       }
-
-      // city.setText(new
-      // JSONObject(viewUser).getString("city").toString());
-      // locality.setText(new
-      // JSONObject(viewUser).getString("locality").toString());
-      // picode.setText(new
-      // JSONObject(viewUser).getString("picode").toString());
-
     } else {
       if (savedInstanceState != null) {
         hname.setText(savedInstanceState.getString("hname"));
@@ -342,7 +309,6 @@ public class AddAddress extends AppCompatActivity {
       if (email.getText().toString().length() == 0)
         email.setText(getEmail(this));
     } catch (Exception e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
     }
 
@@ -350,8 +316,6 @@ public class AddAddress extends AppCompatActivity {
 
       @Override
       public void onClick(View v) {
-        // TODO Auto-generated method stub
-
         if (hname.getText().toString().length() == 0) {
           hname.setError("Enter your name");
           return;
@@ -381,7 +345,6 @@ public class AddAddress extends AppCompatActivity {
         try {
           proD.show();
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
         UShopRestClient.getUAHOY(AddAddress.this, "app.updateUser?msisdn="

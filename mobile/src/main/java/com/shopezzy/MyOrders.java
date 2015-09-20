@@ -51,7 +51,6 @@ public class MyOrders extends AppCompatActivity {
 
     @Override
     public int getCount() {
-      // TODO Auto-generated method stub
       return store.size();
     }
 
@@ -65,7 +64,6 @@ public class MyOrders extends AppCompatActivity {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-      // TODO Auto-generated method stub
       View rowView = convertView;
       if (rowView == null) {
         LayoutInflater inflater = (LayoutInflater) this.getContext()
@@ -177,7 +175,6 @@ public class MyOrders extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
     super.onCreate(savedInstanceState);
     setContentView(R.layout.myorders);
     toolbar = getSupportActionBar();
@@ -207,8 +204,6 @@ public class MyOrders extends AppCompatActivity {
 
       @Override
       public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        // TODO Auto-generated method stub
-        // Log.i(getClass().getSimpleName(), "In the onItemclick");
         Button orderPla = (Button) view.findViewById(R.id.orderstatus);
         Intent nextIntent = new Intent(MyOrders.this, OrderDetails.class);
         nextIntent.putExtra("orderid", myorders.get(position).orderId);
@@ -248,12 +243,10 @@ public class MyOrders extends AppCompatActivity {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
       try {
         proD.dismiss();
         Toast.makeText(MyOrders.this, "Something went wrong", Toast.LENGTH_SHORT).show();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
@@ -261,12 +254,10 @@ public class MyOrders extends AppCompatActivity {
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
       try {
         try {
           proD.dismiss();
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
         String responseString = new String(arg2, "UTF-8");
@@ -294,8 +285,6 @@ public class MyOrders extends AppCompatActivity {
             }
 
             if (myorders.size() > 0) {
-              // Log.i(getClass().getSimpleName(), "Size is: " +
-              // myorders.size());
               MySpinnerAdapter myorderAdapter = new MySpinnerAdapter(MyOrders.this, 0, myorders);
               listView.setAdapter(myorderAdapter);
             }
@@ -307,12 +296,10 @@ public class MyOrders extends AppCompatActivity {
           Toast.makeText(MyOrders.this, "Something went wrong", Toast.LENGTH_SHORT).show();
         }
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
         try {
           proD.dismiss();
         } catch (Exception e1) {
-          // TODO Auto-generated catch block
           e1.printStackTrace();
         }
       }

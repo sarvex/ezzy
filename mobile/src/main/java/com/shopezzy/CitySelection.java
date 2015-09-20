@@ -45,15 +45,8 @@ public class CitySelection extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
     super.onCreate(savedInstanceState);
     setContentView(R.layout.cityselectionnew);
-    // if (USHOP.launch) {
-    //
-    // Intent intent = new Intent(this, SplashScreen.class);
-    // intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    // startActivity(intent);
-    // }
     pref = PreferenceManager.getDefaultSharedPreferences(this);
     ActionBar actionBar = getSupportActionBar();
     actionBar.hide();
@@ -69,17 +62,12 @@ public class CitySelection extends AppCompatActivity {
 
       @Override
       public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        // TODO Auto-generated method stub
         Locality locality = CitySelection.this.mySpinnerAdapter.locality.get(position);
         selectedArea = locality.name;
         proD.setMessage("Fetching available stores...");
         proD.show();
         selectedPin = locality.pin;
         UShopRestClient.getUAHOY(CitySelection.this, getStoresbyPin + locality.pin, null, responseHandlerPin);
-        // Intent nextIntent = new Intent(CitySelectionNew.this,
-        // PickStore.class);
-        // startActivity(nextIntent);
-
       }
     });
 
@@ -87,11 +75,9 @@ public class CitySelection extends AppCompatActivity {
 
       @Override
       public void onClick(View v) {
-        // TODO Auto-generated method stub
         if (cityLocality != null && cityLocality.localities != null && cityLocality.localities.size() > 0) {
           Intent nextIntent = new Intent(CitySelection.this, SearchLocality.class);
           nextIntent.putExtra("selectedcity", selectedCity);
-          // Log.i(getClass().getSimpleName(), "PIN: " + selectedPin);
           nextIntent.putExtra("pin", selectedPin);
           nextIntent.putExtra("localities", gson.toJson(cityLocality));
           startActivity(nextIntent);
@@ -121,7 +107,6 @@ public class CitySelection extends AppCompatActivity {
 
     if (!pref.getString(Constants.pref_locality, "NA").equalsIgnoreCase("NA")) {
 
-      // Log.i(getClass().getSimpleName(), "------------------------");
       allCities = gson.fromJson(pref.getString(Constants.pref_cities, "NA"), AllCities.class);
       cityLocality = gson.fromJson(pref.getString(Constants.pref_locality, "NA"), CityLocality.class);
       selectedCity = pref.getString(Constants.pref_selectedCity, "NA");
@@ -147,11 +132,9 @@ public class CitySelection extends AppCompatActivity {
 
         @Override
         public void run() {
-          // TODO Auto-generated method stub
           try {
             proDi.dismiss();
           } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
           }
         }
@@ -169,11 +152,9 @@ public class CitySelection extends AppCompatActivity {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
       try {
         proD.dismiss();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
@@ -181,7 +162,6 @@ public class CitySelection extends AppCompatActivity {
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
       try {
         String response = new String(arg2, "UTF-8");
         JSONObject jsonObject = new JSONObject(response);
@@ -213,12 +193,9 @@ public class CitySelection extends AppCompatActivity {
           Gson gson = new Gson();
           final String json = gson.toJson(totalStores);
 
-          // Log.i(getClass().getSimpleName(), "J-**" + json + "--"
-          // + stores.size());
           try {
             proD.dismiss();
           } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
           }
 
@@ -226,7 +203,6 @@ public class CitySelection extends AppCompatActivity {
 
             @Override
             public void run() {
-              // TODO Auto-generated method stub
               Intent nextIntent = new Intent(CitySelection.this, PickStore.class);
               nextIntent.putExtra("stores", json);
               pref.edit().putString(Constants.selectedCity, selectedCity).commit();
@@ -240,7 +216,6 @@ public class CitySelection extends AppCompatActivity {
         }
 
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
@@ -253,25 +228,21 @@ public class CitySelection extends AppCompatActivity {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
       try {
         proD.cancel();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
       try {
         proDi.dismiss();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
     }
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
       try {
         i++;
         String response = new String(arg2, "UTF-8");
@@ -294,8 +265,6 @@ public class CitySelection extends AppCompatActivity {
           // city
           cityLocality.localities = newLocalities;
           cityLocalityA.add(cityLocality);
-          // ((USHOP) getApplicationContext()).locality =
-          // cityLocality.localities;
           pref.edit().putString(Constants.pref_selectedCity, selectedCity).commit();
           pref.edit().putString(Constants.pref_locality, gson.toJson(cityLocality)).commit();
 
@@ -309,8 +278,6 @@ public class CitySelection extends AppCompatActivity {
           listView.setAdapter(mySpinnerAdapter);
 
         } else {
-          // Log.i(getClass().getSimpleName(), "Here...");
-
           if (mySpinnerAdapter != null) {
             mySpinnerAdapter.locality.clear();
 
@@ -320,7 +287,6 @@ public class CitySelection extends AppCompatActivity {
         }
 
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
@@ -328,7 +294,6 @@ public class CitySelection extends AppCompatActivity {
         try {
           proDi.dismiss();
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
       }
@@ -337,7 +302,6 @@ public class CitySelection extends AppCompatActivity {
         proD.dismiss();
 
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
     }
@@ -349,34 +313,26 @@ public class CitySelection extends AppCompatActivity {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
       try {
         proD.cancel();
 
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
       try {
         proDi.cancel();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
     }
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
-
-      // Log.i(getClass().getSimpleName(), "Success");
 
       i++;
       try {
         ArrayList<String> allcities = new ArrayList<String>();
-        // ArrayList<AllCities> allC = new
-        // ArrayList<CitySelection.AllCities>();
         String response = new String(arg2, "UTF-8");
         JSONObject jsonObject = new JSONObject(response);
         allCities = new AllCities();
@@ -387,15 +343,12 @@ public class CitySelection extends AppCompatActivity {
 
           }
           allCities.cities = allcities;
-          // allC.add(allCities);
-          // ((USHOP) getApplicationContext()).allCities = allC;
           pref.edit().putString(Constants.pref_cities, gson.toJson(allCities)).commit();
         }
         try {
 
           proD.dismiss();
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
 
@@ -403,16 +356,13 @@ public class CitySelection extends AppCompatActivity {
           if (i == 2)
             proDi.dismiss();
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         try {
 
           proD.dismiss();
         } catch (Exception e1) {
-          // TODO Auto-generated catch block
           e1.printStackTrace();
         }
 
@@ -420,7 +370,6 @@ public class CitySelection extends AppCompatActivity {
           if (i == 2)
             proDi.dismiss();
         } catch (Exception e1) {
-          // TODO Auto-generated catch block
           e1.printStackTrace();
         }
         e.printStackTrace();
@@ -435,7 +384,6 @@ public class CitySelection extends AppCompatActivity {
 
           @Override
           public void run() {
-            // TODO Auto-generated method stub
             if (allCities != null && allCities.cities.size() > 0) {
               if (selectedCity == null) {
                 Intent nextIntent = new Intent(CitySelection.this, PickCity.class);
@@ -454,7 +402,6 @@ public class CitySelection extends AppCompatActivity {
         }, 200);
 
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 
@@ -464,7 +411,6 @@ public class CitySelection extends AppCompatActivity {
 
   @Override
   protected void onResume() {
-    // TODO Auto-generated method stub
     super.onResume();
     if (this.mySpinnerAdapter != null) {
       this.mySpinnerAdapter.notifyDataSetChanged();
@@ -473,7 +419,6 @@ public class CitySelection extends AppCompatActivity {
 
   @Override
   protected void onPause() {
-    // TODO Auto-generated method stub
     super.onPause();
   }
 
@@ -491,12 +436,10 @@ public class CitySelection extends AppCompatActivity {
 
   @Override
   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-    // TODO Auto-generated method stub
     super.onActivityResult(requestCode, resultCode, data);
 
     if (requestCode == 1) {
 
-//			Log.i(getClass().getSimpleName(), "In the Activity Result");
       if (data != null && data.hasExtra("city")) {
         final String city = data.getStringExtra("city");
         selectedCity = city;
@@ -506,7 +449,6 @@ public class CitySelection extends AppCompatActivity {
 
           @Override
           public void run() {
-            // TODO Auto-generated method stub
             proD.setMessage("Fetching Localities...");
             proD.show();
             UShopRestClient.getUAHOY(CitySelection.this, getLocality + city + "&status=0", null,
@@ -519,91 +461,19 @@ public class CitySelection extends AppCompatActivity {
 
   }
 
-  // @Override
-  // public void triggerAreas(final String city) {
-  // // TODO Auto-generated method stub
-  // // Log.i(getClass().getSimpleName(), "City Is " + city);
-  // selectedCity = city;
-  // pickCity.setText(city);
-  //
-  // new Handler().postDelayed(new Runnable() {
-  //
-  // @Override
-  // public void run() {
-  // // TODO Auto-generated method stub
-  // proD.setMessage("Fetching Localities...");
-  // proD.show();
-  // UShopRestClient.getUAHOY(CitySelection.this, getLocality + city +
-  // "&status=0", null,
-  // responseHandlerLocality);
-  // }
-  // }, 600);
-  //
-  // }
-
   public class MySpinnerAdapter extends ArrayAdapter<Locality> {
     private Context mContext;
-    // private ArrayList<CityLocality> list;
     ArrayList<Locality> locality;
     private int i = 0;
 
-    // private int size = locality.size();
-
     @Override
     public int getCount() {
-      // TODO Auto-generated method stub
       return locality.size();
     }
-
-    // @Override
-    // public Filter getFilter() {
-    // // TODO Auto-generated method stub
-    //
-    // Filter filter = new Filter() {
-    //
-    // @Override
-    // protected void publishResults(CharSequence constraint,
-    // FilterResults results) {
-    // // TODO Auto-generated method stub
-    //
-    // locality = (ArrayList<Locality>) results.values;
-    // notifyDataSetChanged();
-    //
-    // }
-    //
-    // @Override
-    // protected FilterResults performFiltering(CharSequence constraint) {
-    // // TODO Auto-generated method stub
-    //
-    // FilterResults results = new FilterResults();
-    // ArrayList<Locality> FilteredArrayNames = new ArrayList<Locality>();
-    // constraint = constraint.toString().toLowerCase();
-    //
-    // // if (locality.size() < ((USHOP)
-    // // getApplicationContext()).locality
-    // // .size()) {
-    // // locality = ((USHOP) getApplicationContext()).locality;
-    // // }
-    // for (int i = 0; i < locality.size(); i++) {
-    // Locality dataNames = locality.get(i);
-    // if (dataNames.name.toLowerCase().contains(
-    // constraint.toString())) {
-    // FilteredArrayNames.add(dataNames);
-    // }
-    // }
-    // results.count = FilteredArrayNames.size();
-    // results.values = FilteredArrayNames;
-    //
-    // return results;
-    // }
-    // };
-    // return filter;
-    // }
 
     public MySpinnerAdapter(Context context, int resource, ArrayList<Locality> objects) {
       super(context, resource, objects);
       this.mContext = context;
-      // this.list = (ArrayList<CityLocality>) objects;
       this.locality = objects;
 
     }
@@ -615,7 +485,6 @@ public class CitySelection extends AppCompatActivity {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-      // TODO Auto-generated method stub
       View rowView = convertView;
       if (rowView == null) {
         LayoutInflater inflater = (LayoutInflater) this.getContext()
@@ -629,15 +498,6 @@ public class CitySelection extends AppCompatActivity {
       }
       final ViewHolderLocality viewHolder = (ViewHolderLocality) rowView.getTag();
       viewHolder.countrytxt.setText(locality.get(position).name);
-      // i++;
-      // if (i % 2 == 0) {
-      // if (i == 0)
-      // return rowView;
-      //
-      // viewHolder.layout.setBackgroundColor(getResources().getColor(
-      // R.color.black90T));
-      // }
-
       return rowView;
     }
   }

@@ -7,7 +7,6 @@ import android.graphics.Paint;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -62,7 +61,6 @@ public class MoreItems extends AppCompatActivity {
   void addItemsSArray(int position, int id, int count) {
 
     if (count == 0) {
-      Log.i(getClass().getSimpleName(), "Count is zero");
       Iterator<ItemsQuery> iterateItems = itemsSArray.iterator();
       int k1 = 0;
       outer:
@@ -84,14 +82,12 @@ public class MoreItems extends AppCompatActivity {
 
     for (int i = 0; i < itemsSArray.size(); i++) {
 
-      // Log.i(getClass().getSimpleName(), "Here in for loop");
       if (Integer.valueOf(itemsSArray.get(i).itemId) == id) {
         itemsSArray.get(i).itemNumber = count + "";
         break;
       }
 
       if (i + 1 == itemsSArray.size()) {
-        // Log.i(getClass().getSimpleName(), "i-1");
         ItemsQuery itemsQu = new SearchItems().new ItemsQuery();
         itemsQu.itemId = fullList.get(this.position).packings.get(position).packid + "";
         itemsQu.itemImage = fullList.get(this.position).image;
@@ -107,7 +103,6 @@ public class MoreItems extends AppCompatActivity {
     }
 
     if (itemsSArray.size() == 0) {
-      // Log.i(getClass().getSimpleName(), "i == 0");
       ItemsQuery itemsQu = new SearchItems().new ItemsQuery();
       itemsQu.itemId = fullList.get(this.position).packings.get(position).packid + "";
       itemsQu.itemImage = fullList.get(this.position).image;
@@ -132,7 +127,6 @@ public class MoreItems extends AppCompatActivity {
       finish();
     } else {
       // this.i = this.i - 1;
-      Log.i(getClass().getSimpleName(), "i is: " + this.i);
       Intent intent = new Intent();
       intent.putExtra("position", this.i);
       intent.putExtra("beforepos", position);
@@ -144,18 +138,13 @@ public class MoreItems extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
     super.onCreate(savedInstanceState);
     setContentView(R.layout.moreitems);
 
     if (Build.VERSION.SDK_INT >= 14) {
 
       this.setFinishOnTouchOutside(false);
-      // Log.i(getClass().getSimpleName(),
-      // "above 14"+Build.VERSION.SDK_INT);
     } else {
-      // Log.i(getClass().getSimpleName(),
-      // "below 14"+Build.VERSION.SDK_INT);
     }
 
     gson = new Gson();
@@ -164,16 +153,9 @@ public class MoreItems extends AppCompatActivity {
     listViewMore = (ListView) findViewById(R.id.moreitems);
 
     if (notify != null && notify.getUpdatedItems() != null) {
-      // Log.i(getClass().getSimpleName(), "saveinstanceinstate");
-      // allItems = notify.getUpdatedResponse();
-      // Log.i(getClass().getSimpleName(), "Items in CreateView: " +
-      // notify.getUpdatedItems());
       Type collectionType = new TypeToken<ArrayList<ItemsQuery>>() {
       }.getType();
       itemsSArray = gson.fromJson(notify.getUpdatedItems(), collectionType);
-
-      // Log.i(getClass().getSimpleName(), "Items Size: " +
-      // itemsSArray.size());
     }
 
     if (getIntent().hasExtra("fullitems")) {
@@ -181,7 +163,6 @@ public class MoreItems extends AppCompatActivity {
       position = getIntent().getIntExtra("position", -1);
       this.i = getIntent().getIntExtra("index", 0);
 
-      Log.i(getClass().getSimpleName(), "FullList S: " + fullListS);
       Type collectionType = new TypeToken<ArrayList<SubList>>() {
       }.getType();
       fullList = gson.fromJson(fullListS, collectionType);
@@ -190,11 +171,9 @@ public class MoreItems extends AppCompatActivity {
         Picasso.with(this).load(fullList.get(position).image).placeholder(R.drawable.default_image)
             .into(itemImage);
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
       itemName.setText(fullList.get(position).item);
-      Log.i(getClass().getSimpleName(), "Size... " + fullList.size());
       packing = fullList.get(position).packings;
       CategorySubAdapter adapter = new CategorySubAdapter(this, 0, packing);
       listViewMore.setAdapter(adapter);
@@ -220,7 +199,6 @@ public class MoreItems extends AppCompatActivity {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-      // TODO Auto-generated method stub
       View rowView = convertView;
       if (rowView == null) {
         LayoutInflater inflater = (LayoutInflater) this.getContext()
@@ -243,8 +221,6 @@ public class MoreItems extends AppCompatActivity {
       }
 
       final ViewHolder viewHolder = (ViewHolder) rowView.getTag();
-      // Log.i(getClass().getSimpleName(), "Here..**" +
-      // list.get(position));
 
       viewHolder.weight.setText(list.get(position).pack);
 
@@ -292,15 +268,10 @@ public class MoreItems extends AppCompatActivity {
           int main = s + s1;
           viewHolder.count.setText("" + main);
           MoreItems.this.i = position;
-          Log.i(getClass().getSimpleName(), "In View: " + MoreItems.this.i);
           list.get(position).itemnumber = main;
           if (notify != null)
             notify.passDataToIncrement("1");
 
-          // Log.i(getClass().getSimpleName(), "Size in viewholder up:
-          // " + itemsSArray.size());
-
-          Log.i(getClass().getSimpleName(), "Position: " + position);
           addItemsSArray(position, list.get(position).packid, main);
 
           if (notify != null) {
@@ -325,13 +296,10 @@ public class MoreItems extends AppCompatActivity {
               // viewHolder.count.setTextColor(getResources().getColor(R.color.grey));
             }
           } catch (NumberFormatException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
           } catch (NotFoundException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
           } catch (Exception e) {
-            // TODO: handle exception
           }
 
         }
@@ -348,10 +316,6 @@ public class MoreItems extends AppCompatActivity {
             Type collectionType = new TypeToken<ArrayList<ItemsQuery>>() {
             }.getType();
             itemsSArray = gson.fromJson(notify.getUpdatedItems(), collectionType);
-
-            // Log.i(getClass().getSimpleName(), "in down the size
-            // is: " + itemsSArray.size());
-
           }
 
           int s = Integer.valueOf(viewHolder.count.getText().toString().trim());
@@ -365,7 +329,6 @@ public class MoreItems extends AppCompatActivity {
               notify.passDataToDecrement("1");
             // linearViewN.startAnimation(moveCart);
             MoreItems.this.i = position;
-            Log.i(getClass().getSimpleName(), "In View: " + MoreItems.this.i);
             viewHolder.count.setText("" + main);
             addItemsSArray(position, list.get(position).packid, main);
             if (notify != null) {
@@ -384,13 +347,10 @@ public class MoreItems extends AppCompatActivity {
               // viewHolder.count.setTextColor(getResources().getColor(R.color.grey));
             }
           } catch (NumberFormatException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
           } catch (NotFoundException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
           } catch (Exception e) {
-            // TODO: handle exception
           }
 
         }
@@ -417,7 +377,6 @@ public class MoreItems extends AppCompatActivity {
 
   @Override
   protected void onPause() {
-    // TODO Auto-generated method stub
     super.onPause();
   }
 

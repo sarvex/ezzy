@@ -52,11 +52,9 @@ public class OrderDetails extends AppCompatActivity {
 
     @Override
     public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-      // TODO Auto-generated method stub
       try {
         proD.dismiss();
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
       Toast.makeText(OrderDetails.this, "Something went wrong", Toast.LENGTH_SHORT).show();
@@ -64,7 +62,6 @@ public class OrderDetails extends AppCompatActivity {
 
     @Override
     public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-      // TODO Auto-generated method stub
       try {
         String responseString = new String(arg2, "UTF-8");
         itemsQuery = new ArrayList<SearchItems.ItemsQuery>();
@@ -128,7 +125,6 @@ public class OrderDetails extends AppCompatActivity {
               // viewHolder.orderstatus.setText("" + "COMPLETED");
             }
           } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
           }
           items.setText(totalItems + " items");
@@ -151,23 +147,19 @@ public class OrderDetails extends AppCompatActivity {
             }
 
             orderstatus.setVisibility(View.VISIBLE);
-//						Log.i(getClass().getSimpleName(), "Size is: " + itemsQuery.size());
             OrderAdapter orderAd = new OrderAdapter(OrderDetails.this, 0, itemsQuery);
             listView.setAdapter(orderAd);
 
           }
 
         }
-//				Log.i(getClass().getSimpleName(), "Response String: " + responseString);
 
         try {
           proD.dismiss();
         } catch (Exception e) {
-          // TODO Auto-generated catch block
           e.printStackTrace();
         }
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
     }
@@ -188,7 +180,6 @@ public class OrderDetails extends AppCompatActivity {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-      // TODO Auto-generated method stub
       View rowView = convertView;
       if (rowView == null) {
         LayoutInflater inflater = (LayoutInflater) this.getContext()
@@ -206,8 +197,6 @@ public class OrderDetails extends AppCompatActivity {
       }
 
       final ViewHolder viewHolder = (ViewHolder) rowView.getTag();
-      // Log.i(getClass().getSimpleName(), "Here..**" +
-      // list.get(position));
       viewHolder.itemName.setText(list.get(position).itemName);
       viewHolder.weight.setText(list.get(position).itemWt);
       viewHolder.price1.setText(this.mContext.getResources().getString(R.string.rs) + " "
@@ -220,18 +209,8 @@ public class OrderDetails extends AppCompatActivity {
         Picasso.with(OrderDetails.this).load(list.get(position).itemImage).placeholder(R.drawable.default_image)
             .into(viewHolder.image);
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
-
-      // i++;
-      // if (i % 2 == 0) {
-      // if (i == 0)
-      // return rowView;
-      //
-      // viewHolder.layout.setBackgroundColor(getResources().getColor(
-      // R.color.black90T));
-      // }
 
       return rowView;
     }
@@ -249,15 +228,8 @@ public class OrderDetails extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    // TODO Auto-generated method stub
     super.onCreate(savedInstanceState);
     setContentView(R.layout.orderdettails);
-//		if (USHOP.launch) {
-//
-//			Intent intent = new Intent(this, SplashScreen.class);
-//			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//			startActivity(intent);
-//		}
     toolbar = getSupportActionBar();
     ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#25ac52"));
     toolbar.setBackgroundDrawable(colorDrawable);
@@ -277,7 +249,6 @@ public class OrderDetails extends AppCompatActivity {
     try {
       orderId = getIntent().getStringExtra("orderid");
     } catch (Exception e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
       orderId = "";
     }
@@ -310,7 +281,6 @@ public class OrderDetails extends AppCompatActivity {
 
   @Override
   protected void onResume() {
-    // TODO Auto-generated method stub
     super.onResume();
   }
 
@@ -328,7 +298,6 @@ public class OrderDetails extends AppCompatActivity {
 
   @Override
   protected void onPause() {
-    // TODO Auto-generated method stub
     super.onPause();
   }
 }
