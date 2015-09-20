@@ -1,22 +1,476 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:2:1-186:12
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:2:1-154:12
 	package
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:3:5-27
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:2:11-33
 		INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:5:5-32
-		INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml
-	android:versionCode
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:4:5-29
 		INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:3:11-69
+	android:versionCode
+		INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml
+permission#com.shopezzy.permission.C2D_MESSAGE
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:6:3-8:42
+	android:protectionLevel
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:8:5-40
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:7:5-55
+uses-permission#com.shopezzy.permission.C2D_MESSAGE
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:10:3-72
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:10:20-70
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:11:3-64
+MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.8.0\AndroidManifest.xml:19:5-67
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:11:20-62
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:12:3-68
+MERGED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\AndroidManifest.xml:21:5-70
+MERGED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\AndroidManifest.xml:21:5-70
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:12:20-66
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:13:3-67
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:13:20-65
+uses-permission#android.permission.READ_SMS
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:14:3-64
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:14:20-62
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:15:3-76
+MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-nearby:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.8.0\AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:15:20-74
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:16:3-79
+MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\AndroidManifest.xml:21:5-82
+MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\AndroidManifest.xml:21:5-82
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:16:20-77
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:17:3-65
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:17:20-63
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:18:3-63
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:18:20-61
+application
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:20:3-152:17
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\design\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.8.0\AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appstate:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-cast:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:mediarouter-v7:22.2.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-fitness:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-location:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-games:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-location:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-nearby:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.8.0\AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-panorama:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-plus:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\7.8.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-wearable:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-plus:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-location:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.8.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.5.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.5.0\AndroidManifest.xml:28:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:24:5-37
+	android:allowBackup
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:22:5-31
+	android:icon
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:23:5-41
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:21:5-38
+activity#com.shopezzy.SplashScreen
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:25:5-33:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:27:7-39
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:26:7-35
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:28:7-32:23
+action#android.intent.action.MAIN
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:29:9-60
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:29:17-58
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:31:9-68
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:31:19-66
+activity#com.shopezzy.ConfirmNumber
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:34:5-38:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:36:7-37
+	android:noHistory
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:37:7-31
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:35:7-36
+activity#com.shopezzy.IntroScreen
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:39:5-42:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:41:7-39
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:40:7-34
+activity#com.shopezzy.RegisterYourSelf
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:43:5-47:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:45:7-39
+	android:windowSoftInputMode
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:46:7-46
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:44:7-39
+activity#com.shopezzy.PickCity
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:48:5-52:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:50:7-39
+	android:noHistory
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:51:7-31
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:49:7-31
+activity#com.shopezzy.MoreItems
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:53:5-57:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:55:7-39
+	android:noHistory
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:56:7-31
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:54:7-32
+activity#com.shopezzy.SearchLocality
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:58:5-62:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:60:7-39
+	android:noHistory
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:61:7-31
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:59:7-37
+activity#com.shopezzy.PickStore
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:63:5-66:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:65:7-39
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:64:7-32
+activity#com.shopezzy.CitySelection
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:67:5-70:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:69:7-39
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:68:7-36
+activity#com.shopezzy.SearchItems
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:71:5-75:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:73:7-39
+	android:windowSoftInputMode
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:74:7-61
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:72:7-34
+activity#com.shopezzy.SearchItemReview
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:76:5-79:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:78:7-39
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:77:7-39
+activity#com.shopezzy.Checkout
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:80:5-83:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:82:7-39
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:81:7-31
+activity#com.shopezzy.AddAddress
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:84:5-88:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:86:7-39
+	android:windowSoftInputMode
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:87:7-46
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:85:7-33
+activity#com.shopezzy.ThankYou
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:89:5-92:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:91:7-39
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:90:7-31
+activity#com.shopezzy.MyOrders
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:93:5-96:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:95:7-39
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:94:7-31
+activity#com.shopezzy.OrderDetails
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:97:5-100:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:99:7-39
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:98:7-35
+activity#com.shopezzy.PendingItems
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:101:5-106:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:103:7-39
+	android:noHistory
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:104:7-31
+	android:theme
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:105:7-48
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:102:7-35
+activity#com.shopezzy.PushMessage
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:107:5-111:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:109:7-39
+	android:noHistory
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:110:7-31
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:108:7-34
+activity#com.shopezzy.Categories
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:112:5-115:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:114:7-39
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:113:7-33
+activity#com.shopezzy.FullItems
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:116:5-119:16
+	android:label
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:118:7-39
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:117:7-32
+receiver#com.shopezzy.SMSReceiver
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:121:5-128:16
+	android:exported
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:123:7-30
+	android:permission
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:124:7-60
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:122:7-46
+intent-filter#android.provider.Telephony.SMS_RECEIVED
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:125:7-127:23
+	android:priority
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:125:22-51
+action#android.provider.Telephony.SMS_RECEIVED
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:126:9-73
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:126:17-71
+receiver#com.shopezzy.GcmBroadcastReceiver
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:129:5-137:16
+	android:permission
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:131:7-67
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:130:7-55
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.shopezzy
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:132:7-136:23
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:133:9-72
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:133:17-70
+category#com.shopezzy
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:135:9-48
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:135:19-46
+service#com.shopezzy.GcmIntentService
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:139:5-60
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:139:14-58
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:141:5-143:62
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:143:7-60
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:142:7-52
+receiver#com.shopezzy.ReferrerReceiver
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:145:5-151:16
+	android:exported
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:147:7-30
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:146:7-51
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:148:7-150:23
+action#com.android.vending.INSTALL_REFERRER
+ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:149:9-70
+	android:name
+		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:149:17-68
 uses-sdk
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:multidex:1.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
@@ -152,523 +606,11 @@ MERGED from [com.facebook.android:facebook-android-sdk:4.5.0] C:\Users\Sarvex Ja
 MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
 MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.github.JakeWharton\ViewPagerIndicator\2.4.1\AndroidManifest.xml:8:5-43
 	android:targetSdkVersion
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:8:9-35
 		INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml
-permission#com.shopezzy.permission.C2D_MESSAGE
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:11:5-13:47
-	android:protectionLevel
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:13:9-44
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:12:9-59
-uses-permission#com.shopezzy.permission.C2D_MESSAGE
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:15:5-75
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:15:22-72
-uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:16:5-67
-MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-appinvite:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.8.0\AndroidManifest.xml:19:5-67
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:21:5-66
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:16:22-64
-uses-permission#android.permission.GET_ACCOUNTS
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:17:5-71
-MERGED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\AndroidManifest.xml:21:5-70
-MERGED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\AndroidManifest.xml:21:5-70
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:17:22-68
-uses-permission#android.permission.RECEIVE_SMS
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:18:5-70
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:18:22-67
-uses-permission#android.permission.READ_SMS
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:19:5-67
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:19:22-64
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:20:5-79
-MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-nearby:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.8.0\AndroidManifest.xml:19:5-79
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:20:5-78
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:20:22-76
-uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:21:5-82
-MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\AndroidManifest.xml:21:5-82
-MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\AndroidManifest.xml:21:5-82
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:21:22-79
-uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:22:5-68
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:22:22-65
-uses-permission#android.permission.VIBRATE
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:23:5-66
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:23:22-63
-application
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:25:5-184:19
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\design\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appinvite:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.8.0\AndroidManifest.xml:20:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appstate:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-cast:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:mediarouter-v7:22.2.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-drive:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-fitness:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-location:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-games:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-drive:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-identity:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-location:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-nearby:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.8.0\AndroidManifest.xml:20:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-panorama:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-plus:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-safetynet:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-vision:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\7.8.0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-identity:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-wearable:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-identity:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-identity:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-plus:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-gcm:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-location:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.8.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:28:5-20
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.5.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.5.0\AndroidManifest.xml:28:5-20
-MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:29:9-41
-	android:allowBackup
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:27:9-35
-	android:icon
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:28:9-45
-	android:theme
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:30:9-41
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:26:9-42
-activity#com.shopezzy.SplashScreen
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:31:9-40:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:34:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:33:13-45
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:32:13-41
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:35:13-39:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:36:17-69
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:36:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:38:17-77
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:38:27-74
-activity#com.shopezzy.ConfirmNumber
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:41:9-47:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:45:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:43:13-43
-	android:noHistory
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:44:13-37
-	android:theme
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:46:13-50
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:42:13-54
-activity#com.shopezzy.IntroScreen
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:48:9-52:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:51:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:50:13-45
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:49:13-52
-activity#com.shopezzy.RegisterYourSelf
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:53:9-59:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:56:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:55:13-45
-	android:windowSoftInputMode
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:58:13-52
-	android:theme
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:57:13-50
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:54:13-57
-activity#com.shopezzy.PickCity
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:60:9-66:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:64:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:62:13-45
-	android:noHistory
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:63:13-37
-	android:theme
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:65:13-54
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:61:13-49
-activity#com.shopezzy.MoreItems
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:67:9-73:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:71:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:69:13-45
-	android:noHistory
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:70:13-37
-	android:theme
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:72:13-54
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:68:13-50
-activity#com.shopezzy.SearchLocality
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:74:9-79:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:78:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:76:13-45
-	android:noHistory
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:77:13-37
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:75:13-55
-activity#com.shopezzy.PickStore
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:80:9-85:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:83:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:82:13-45
-	android:theme
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:84:13-50
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:81:13-50
-activity#com.shopezzy.CitySelection
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:86:9-90:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:89:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:88:13-45
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:87:13-54
-activity#com.shopezzy.SearchItems
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:91:9-96:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:94:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:93:13-45
-	android:windowSoftInputMode
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:95:13-67
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:92:13-40
-activity#com.shopezzy.SearchItemReview
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:97:9-101:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:100:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:99:13-45
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:98:13-57
-activity#com.shopezzy.Checkout
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:102:9-106:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:105:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:104:13-45
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:103:13-49
-activity#com.shopezzy.AddAddress
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:107:9-112:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:110:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:109:13-45
-	android:windowSoftInputMode
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:111:13-52
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:108:13-51
-activity#com.shopezzy.ThankYou
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:113:9-117:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:116:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:115:13-45
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:114:13-49
-activity#com.shopezzy.MyOrders
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:118:9-122:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:121:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:120:13-45
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:119:13-49
-activity#com.shopezzy.OrderDetails
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:123:9-127:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:126:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:125:13-45
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:124:13-53
-activity#com.shopezzy.PendingItems
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:128:9-134:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:132:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:130:13-45
-	android:noHistory
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:131:13-37
-	android:theme
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:133:13-54
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:129:13-53
-activity#com.shopezzy.PushMessage
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:135:9-141:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:139:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:137:13-45
-	android:noHistory
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:138:13-37
-	android:theme
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:140:13-54
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:136:13-52
-activity#com.shopezzy.Categories
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:142:9-146:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:145:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:144:13-45
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:143:13-51
-activity#com.shopezzy.FullItems
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:147:9-151:20
-	android:screenOrientation
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:150:13-49
-	android:label
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:149:13-45
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:148:13-50
-receiver#com.shopezzy.SMSReceiver
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:153:9-160:20
-	android:exported
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:155:13-36
-	android:permission
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:156:13-66
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:154:13-52
-intent-filter#android.provider.Telephony.SMS_RECEIVED
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:157:13-159:29
-	android:priority
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:157:28-57
-action#android.provider.Telephony.SMS_RECEIVED
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:158:17-82
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:158:25-79
-receiver#com.shopezzy.GcmBroadcastReceiver
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:161:9-169:20
-	android:permission
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:163:13-73
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:162:13-61
-intent-filter#com.google.android.c2dm.intent.RECEIVE+com.shopezzy
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:164:13-168:29
-action#com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:165:17-81
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:165:25-78
-category#com.shopezzy
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:167:17-57
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:167:27-54
-service#com.shopezzy.GcmIntentService
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:171:9-65
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:171:18-62
-meta-data#com.google.android.gms.version
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:173:9-175:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:21:9-23:69
-	android:value
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:175:13-66
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:174:13-58
-receiver#com.shopezzy.ReferrerReceiver
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:177:9-183:20
-	android:exported
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:179:13-36
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:178:13-57
-intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:180:13-182:29
-action#com.android.vending.INSTALL_REFERRER
-ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:181:17-79
-	android:name
-		ADDED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:181:25-76
 activity#com.google.android.gms.ads.AdActivity
 ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:26:9-29:64
 	android:configChanges
@@ -706,7 +648,7 @@ MERGED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Ja
 	android:required
 		ADDED from [com.google.android.gms:play-services-maps:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\AndroidManifest.xml:25:8-31
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:2:1-186:12 reason: com.google.android.gms.maps requested WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\src\main\AndroidManifest.xml:2:1-154:12 reason: com.google.android.gms.maps requested WRITE_EXTERNAL_STORAGE
 uses-permission#android.permission.USE_CREDENTIALS
 ADDED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\AndroidManifest.xml:22:5-73
 MERGED from [com.google.android.gms:play-services-wallet:7.8.0] C:\Users\Sarvex Jatasra\Workspace\ezzy\mobile\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\AndroidManifest.xml:22:5-73

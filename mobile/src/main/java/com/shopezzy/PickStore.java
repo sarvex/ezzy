@@ -13,9 +13,13 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -26,12 +30,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RatingBar;
+import android.widget.Toolbar;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
@@ -42,16 +42,15 @@ import com.loopj.android.http.RequestParams;
 import com.shopezzy.CitySelection.Store;
 import com.shopezzy.CitySelection.TotalStores;
 
-import org.apache.http.Header;
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-public class PickStore extends SherlockActivity {
+public class PickStore extends AppCompatActivity {
 
-	private ActionBar actionbar;
+	private Toolbar toolbar;
 	private Gson gson;
 	private TextView select3, near;
 	private Button changeLocation;
@@ -346,7 +345,7 @@ public class PickStore extends SherlockActivity {
 		// intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		// startActivity(intent);
 		// }
-		actionbar = getSupportActionBar();
+		toolbar = getSupportActionBar();
 		email = getEmail(this);
 		pref = PreferenceManager.getDefaultSharedPreferences(this);
 
@@ -402,9 +401,9 @@ public class PickStore extends SherlockActivity {
 		tf = Typeface.createFromAsset(this.getAssets(), "Sansation_Regular.ttf");
 		SpannableString s = new SpannableString("Pick your Store");
 		s.setSpan(new ActionbarCus("", tf), 0, s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-		actionbar.setTitle(s);
+		toolbar.setTitle(s);
 
-		actionbar.show();
+		toolbar.show();
 
 		gson = new Gson();
 

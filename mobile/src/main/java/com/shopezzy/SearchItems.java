@@ -9,7 +9,10 @@ import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -30,16 +33,12 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.squareup.picasso.Picasso;
 
-import org.apache.http.Header;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -47,10 +46,10 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class SearchItems extends SherlockActivity implements SearchView.OnQueryTextListener {
+public class SearchItems extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
 	private SearchView mSearchView;
-	private ActionBar mActionBar;
+	private Toolbar toolbar;
 	private ImageView cart;
 	private ImageView searchView;
 	static NotifyCallBack notify;
@@ -200,9 +199,9 @@ public class SearchItems extends SherlockActivity implements SearchView.OnQueryT
 
 		searchItems = this;
 		gson = new Gson();
-		mActionBar = getSupportActionBar();
+		toolbar = getSupportActionBar();
 		ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#25ac52"));
-		mActionBar.setBackgroundDrawable(colorDrawable);
+		toolbar.setBackgroundDrawable(colorDrawable);
 
 		mSearchView = (SearchView) findViewById(R.id.search_view);
 
@@ -236,10 +235,10 @@ public class SearchItems extends SherlockActivity implements SearchView.OnQueryT
 			}
 		});
 		linearViewN = (LinearLayout) actionbarView.findViewById(R.id.circle1);
-		mActionBar.setDisplayShowCustomEnabled(true);
-		mActionBar.setDisplayShowTitleEnabled(false);
-		mActionBar.setCustomView(actionbarView);
-		mActionBar.setDisplayHomeAsUpEnabled(true);
+		toolbar.setDisplayShowCustomEnabled(true);
+		toolbar.setDisplayShowTitleEnabled(false);
+		toolbar.setCustomView(actionbarView);
+		toolbar.setDisplayHomeAsUpEnabled(true);
 
 		int searchcloseicon = getResources().getIdentifier("android:id/search_close_btn", null, null);
 		searchCloseIcon = (ImageView) mSearchView.findViewById(searchcloseicon);
