@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ushop="http://schemas.android.com/apk/res/com.shopezzy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/aboveitems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="10.0dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="120.0dip" >
+
+            <com.shopezzy.TextView
+                android:id="@+id/shopname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Rapid Ration"
+                android:textColor="@color/orange"
+                android:textSize="17sp"
+                ushop:font="Sansation_Regular.ttf" />
+
+            <com.shopezzy.TextView
+                android:id="@+id/orderid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopname"
+                android:layout_gravity="center"
+                android:layout_marginTop="5.0dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Order ID: EUU3854LL02J"
+                android:textColor="#898989"
+                android:textSize="14sp"
+                ushop:font="Sansation_Regular.ttf" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/orderstatus"
+            android:layout_width="100.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/delivered"
+            android:text="Order Placed"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/remaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboveitems"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="5.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/verticalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.shopezzy.TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Fri, Jan 12, 2015 13:25"
+                android:textColor="#898989"
+                android:textSize="14sp"
+                ushop:font="Sansation_Regular.ttf" />
+
+            <com.shopezzy.TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="228 Rs"
+                android:textColor="#898989"
+                android:textSize="14sp"
+                ushop:font="Rupee_Foradian.ttf" />
+        </RelativeLayout>
+
+        <com.shopezzy.TextView
+            android:id="@+id/items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verticalLayout"
+            android:layout_gravity="center"
+            android:layout_marginTop="5.0dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="12 items"
+            android:textColor="#898989"
+            android:textSize="14sp"
+            ushop:font="Sansation_Regular.ttf" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Sarvex%20Jatasra/Workspace/ezzy/mobile/src/main/res/layout/myorderview.xml -->

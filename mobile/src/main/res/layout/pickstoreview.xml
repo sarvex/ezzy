@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ushop="http://schemas.android.com/apk/res/com.shopezzy"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="120.0dip"
+    android:layout_gravity="center_vertical|top"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pickview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <com.shopezzy.TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="125.0dip"
+            android:layout_marginTop="15.0dip"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:textColor="#24ac52"
+            android:textSize="16sp"
+            ushop:font="Sansation_Regular.ttf" >
+        </com.shopezzy.TextView>
+
+        <com.shopezzy.TextView
+            android:id="@+id/minorder"
+            android:layout_width="125.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15.0dip"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:paddingRight="8.0dip"
+            android:singleLine="true"
+            android:textColor="#898989"
+            android:textSize="14sp"
+            ushop:font="Sansation_Regular.ttf" >
+        </com.shopezzy.TextView>
+
+        <com.shopezzy.TextView
+            android:id="@+id/minrs"
+            android:layout_width="125.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/minorder"
+            android:layout_marginTop="5.0dip"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:paddingRight="8.0dip"
+            android:singleLine="true"
+            android:textColor="#24ac52"
+            android:textSize="16sp"
+            ushop:font="Rupee_Foradian.ttf" >
+        </com.shopezzy.TextView>
+
+        <com.shopezzy.TextView
+            android:id="@+id/delivey"
+            android:layout_width="185.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/minrs"
+            android:layout_marginTop="5.0dip"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:maxLines="2"
+            android:paddingRight="8.0dip"
+            android:textColor="#898989"
+            android:textSize="14sp"
+            ushop:font="Sansation_Regular.ttf" >
+        </com.shopezzy.TextView>
+
+        <com.shopezzy.TextView
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="125.0dip"
+            android:layout_marginTop="5.0dip"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:textColor="#898989"
+            android:textSize="13sp"
+            ushop:font="Sansation_Regular.ttf" >
+        </com.shopezzy.TextView>
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            style="@style/customrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="185.0dip"
+            android:layout_marginTop="5.0dip"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5" />
+    </RelativeLayout>
+
+</FrameLayout>

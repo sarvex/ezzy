@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ushop="http://schemas.android.com/apk/res/com.shopezzy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/align"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50.0dip" >
+
+        <com.shopezzy.TextView
+            android:id="@+id/thankyou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:text="Thank You!!!"
+            android:textColor="@color/orange"
+            android:textSize="25sp"
+            ushop:font="Sansation_Regular.ttf" />
+
+        <View
+            android:id="@+id/vthankyou"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/thankyou"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5.0dip"
+            android:background="@color/orange" />
+
+        <com.shopezzy.TextView
+            android:id="@+id/orderplaced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vthankyou"
+            android:layout_marginTop="10.0dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:singleLine="true"
+            android:text="Your Order Has Been Placed"
+            android:textColor="#575757"
+            android:textSize="20sp"
+            ushop:font="Sansation_Regular.ttf" />
+
+        <LinearLayout
+            android:id="@+id/ordernumR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderplaced"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip" >
+
+            <com.shopezzy.TextView
+                android:id="@+id/ordernum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="With order #"
+                android:textColor="#898989"
+                android:textSize="16sp"
+                ushop:font="Sansation_Regular.ttf" />
+
+            <com.shopezzy.TextView
+                android:id="@+id/ordernumnext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#25ac52"
+                android:textSize="16sp"
+                ushop:font="Sansation_Regular.ttf" />
+        </LinearLayout>
+
+        <com.shopezzy.TextView
+            android:id="@+id/orderdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ordernumR"
+            android:layout_marginTop="5.0dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:singleLine="true"
+            android:textColor="#898989"
+            android:textSize="14sp"
+            ushop:font="Sansation_Regular.ttf" />
+
+        <View
+            android:id="@+id/vtdate"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/orderdate"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10.0dip"
+            android:background="#cfcfcf" />
+
+        <LinearLayout
+            android:id="@+id/itemsDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vtdate"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip" >
+
+            <com.shopezzy.TextView
+                android:id="@+id/itemsNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#25ac52"
+                android:textSize="16sp"
+                ushop:font="Sansation_Regular.ttf" />
+
+            <com.shopezzy.TextView
+                android:id="@+id/itemsprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ef6c06"
+                android:textSize="16sp"
+                ushop:font="Rupee_Foradian.ttf" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vtitems"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/itemsDetails"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10.0dip"
+            android:background="#cfcfcf" />
+
+        <com.shopezzy.TextView
+            android:id="@+id/shopname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vtitems"
+            android:layout_marginTop="10.0dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:singleLine="true"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            ushop:font="Sansation_Regular.ttf" />
+
+        <com.shopezzy.TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shopname"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:textColor="#898989"
+            android:textSize="14sp"
+            ushop:font="Sansation_Regular.ttf" />
+
+        <com.shopezzy.TextView
+            android:id="@+id/delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="5dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:singleLine="true"
+            android:textColor="#898989"
+            android:textSize="14sp"
+            ushop:font="Sansation_Regular.ttf" />
+
+        <View
+            android:id="@+id/vdelivery"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/delivery"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10.0dip"
+            android:background="#cfcfcf" />
+
+        <com.shopezzy.TextView
+            android:id="@+id/terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vdelivery"
+            android:layout_marginTop="10dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:text="@string/terms"
+            android:textColor="#898989"
+            android:textSize="12sp"
+            ushop:font="Sansation_Regular.ttf" />
+
+        <View
+            android:id="@+id/vterms"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/terms"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10.0dip"
+            android:background="#cfcfcf" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/done"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <com.shopezzy.TextView
+            android:id="@+id/myorders"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="My Orders"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            ushop:font="Sansation_Regular.ttf" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+        <com.shopezzy.TextView
+            android:id="@+id/home"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            ushop:font="Sansation_Regular.ttf" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Sarvex%20Jatasra/Workspace/ezzy/mobile/src/main/res/layout/orderplaced.xml -->

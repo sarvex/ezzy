@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ushop="http://schemas.android.com/apk/res/com.shopezzy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/aboveitems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="120.0dip" >
+
+            <com.shopezzy.TextView
+                android:id="@+id/shopname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/orange"
+                android:textSize="17sp"
+                ushop:font="Sansation_Regular.ttf" />
+
+            <com.shopezzy.TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopname"
+                android:layout_gravity="center"
+                android:layout_marginTop="5.0dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#898989"
+                android:textSize="14sp"
+                ushop:font="Sansation_Regular.ttf" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/orderstatus"
+            android:layout_width="100.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/delivered"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/itemsl"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:layout_below="@+id/aboveitems"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/items" >
+
+        <RelativeLayout
+            android:id="@+id/itemssub"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip" >
+
+            <com.shopezzy.TextView
+                android:id="@+id/items"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textColor="#5c5c5c"
+                android:textSize="16sp"
+                ushop:font="Sansation_Regular.ttf" />
+
+            <View
+                android:id="@+id/vitems"
+                android:layout_width="1.0dip"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_toRightOf="@+id/items"
+                android:background="#c1c1c1" />
+
+            <com.shopezzy.TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/vitems"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#5c5c5c"
+                android:textSize="16sp"
+                ushop:font="Rupee_Foradian.ttf" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/itemsl"
+        android:layout_marginTop="10.0dip"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/black80T"
+        android:dividerHeight="1dip"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</RelativeLayout>

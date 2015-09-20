@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ushop="http://schemas.android.com/apk/res/com.shopezzy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/appname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.shopezzy.TextView
+            android:id="@+id/txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="60sp"
+            ushop:font="Bariol.OTF" />
+
+        <com.shopezzy.TextView
+            android:id="@+id/txtViewNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="41sp"
+            android:textStyle="bold"
+            ushop:font="Bariol.OTF" />
+
+        <com.shopezzy.TextView
+            android:id="@+id/txtViewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="3.0dip"
+            android:singleLine="true"
+            android:text="List"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            ushop:font="LHANDW.TTF" 
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:background="@drawable/progress"
+        android:gravity="center_horizontal"
+        android:visibility="gone" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Sarvex%20Jatasra/Workspace/ezzy/mobile/src/main/res/layout-large/splash.xml -->

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/centerbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/search_cart" />
+
+    <ListView
+        android:id="@+id/searchlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="60.0dip"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/black80T"
+        android:dividerHeight="1.0dip"
+        android:listSelector="@android:color/transparent"
+        android:visibility="invisible" >
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/searchprogress"
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#25ac52" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view1"
+            android:background="#f8f8f8" >
+
+            <com.shopezzy.SearchView
+                android:id="@+id/search_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Sarvex%20Jatasra/Workspace/ezzy/mobile/src/main/res/layout/searchitems.xml -->

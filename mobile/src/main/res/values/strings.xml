@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">shopEZZY</string>
+    <string name="app_name1">shop</string>
+    <string name="app_name2">EZZY</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="myoders">My Orders</string>
+    <string name="cart_text">0</string>
+    <string name="sensation">Sansation_Regular.ttf</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="setting">Settings</string>
+    <string name="faq">FAQ</string>
+    <string name="help">Help</string>
+    <string name="register_with_us">Kindly enter your number to register with us</string>
+    <string name="register_confirm">Confirm</string>
+    <string name="register_if_already">If Already Registered ?</string>
+    <string name="confirm_number">To confirm your code, enter the code below</string>
+    <string name="confirm_resend">Resend</string>
+    <string name="cityselection_select_city">Select Your City</string>
+    <string name="swipe">Swipe for category</string>
+    <string name="tappick">Tap to pick</string>
+    <string name="action_search">Search</string>
+    <string name="search">Search</string>
+    <string name="rs">`</string>
+    <string name="terms">*You would be required to pay on delivery as per final bill produced by retailer. Actual bill could be lesser or higher depending on items available and their pervailing price.</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@color/black80T"
+        android:dividerHeight="1.0dip"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</RelativeLayout><!-- From: file:/C:/Users/Sarvex%20Jatasra/Workspace/ezzy/mobile/src/main/res/layout/myorders.xml -->

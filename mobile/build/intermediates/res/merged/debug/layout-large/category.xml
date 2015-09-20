@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ushop="http://schemas.android.com/apk/res/com.shopezzy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1" >
+
+    <LinearLayout
+        android:layout_width="300.0dip"
+        android:layout_height="300.0dip"
+        android:background="@android:color/white"
+        android:weightSum="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" >
+
+            <ImageView
+                android:id="@+id/productimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="70.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10.0dip"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:paddingBottom="5.0dip"
+                android:weightSum="2" >
+
+                <com.shopezzy.TextView
+                    android:id="@+id/nameup"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="My Buyes"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    ushop:font="Sansation_Regular.ttf" />
+
+                <com.shopezzy.TextView
+                    android:id="@+id/namedown"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Recently Buyed Items"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    ushop:font="Sansation_Regular.ttf" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout><!-- From: file:/C:/Users/Sarvex%20Jatasra/Workspace/ezzy/mobile/src/main/res/layout-large/category.xml -->

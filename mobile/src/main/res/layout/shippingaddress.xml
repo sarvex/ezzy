@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ushop="http://schemas.android.com/apk/res/com.shopezzy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50.0dip"
+        android:orientation="vertical"
+        android:weightSum="7" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/name" />
+
+            <EditText
+                android:id="@+id/hname"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:hint="Name"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:textColor="@color/adscolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9e9e9e" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/door" />
+
+            <EditText
+                android:id="@+id/hnumber"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:hint="House/Door Number"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:textColor="@color/adscolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/hintcolor" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/flat" />
+
+            <EditText
+                android:id="@+id/streat"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:hint="Building/Society name"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:textColor="@color/adscolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/hintcolor" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/locality" />
+
+            <EditText
+                android:id="@+id/locality"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Locality"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:textColor="@color/adscolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/hintcolor" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/citys" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="City"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:textColor="@color/adscolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/hintcolor" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/pincode" />
+
+            <EditText
+                android:id="@+id/picode"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="PinCode"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:textColor="@color/adscolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/hintcolor" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/email" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:hint="Email"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:textColor="@color/adscolor"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/done"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/actionbarmain" >
+
+        <com.shopezzy.TextView
+            android:id="@+id/txtdone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Confirm"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            ushop:font="Sansation_Regular.ttf" />
+    </RelativeLayout>
+
+</RelativeLayout>

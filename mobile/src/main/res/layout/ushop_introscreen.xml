@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ushop="http://schemas.android.com/apk/res/com.shopezzy"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:id="@+id/firsthalf"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.5"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.shopezzy.TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="Exciting way "
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            ushop:font="Sansation_Regular.ttf" />
+
+        <com.shopezzy.TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="to shop your groceries"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            ushop:font="LHANDW.TTF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/circles"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            app:fillColor="@color/actionbarmain"
+            app:pageColor="#ffffff"
+            app:radius="8dp"
+            app:strokeColor="@color/actionbarmain" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gotit"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.shopezzy.TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="Got it, Let&apos;s go"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            ushop:font="Sansation_Regular.ttf" />
+    </LinearLayout>
+
+</LinearLayout>

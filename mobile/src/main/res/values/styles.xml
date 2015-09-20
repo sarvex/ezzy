@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Styled" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#3FB155</item>
+        <item name="colorPrimaryDark">#309F3F</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+    <!-- Title on action bar -->
+    <style name="TitleText">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Theme.USHOP_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="customrating" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_custom</item>
+        <item name="android:minHeight">15dip</item>
+        <item name="android:maxHeight">15dip</item>
+    </style>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ushop="http://schemas.android.com/apk/res/com.shopezzy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_country" >
+
+    <View
+        android:id="@+id/actionbargap"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <com.shopezzy.TextView
+        android:id="@+id/txtView1"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:layout_below="@+id/actionbargap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center"
+        android:text="Pick City"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        ushop:font="Sansation_Regular.ttf" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/txtView1"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginRight="40.0dip"
+        android:background="@android:color/white" />
+
+    <com.shopezzy.TextView
+        android:id="@+id/txtView2"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:layout_below="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center"
+        android:text="Search Delivery Area"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        ushop:font="Sansation_Regular.ttf" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/txtView2"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginRight="40.0dip"
+        android:background="@android:color/white"
+        android:visibility="invisible" />
+
+    <com.shopezzy.TextView
+        android:id="@+id/txtView3"
+        android:layout_width="wrap_content"
+        android:layout_height="20.0dip"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:gravity="center"
+        android:text="or"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        ushop:font="Sansation_Regular.ttf" />
+
+    <com.shopezzy.TextView
+        android:id="@+id/txtView4"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:layout_below="@+id/txtView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:gravity="center"
+        android:text="Pick From Below"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        ushop:font="Sansation_Regular.ttf" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/txtView4"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/black80T"
+        android:dividerHeight="3.0dip"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</RelativeLayout>

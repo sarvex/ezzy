@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ushop="http://schemas.android.com/apk/res/com.shopezzy"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.shopezzy.TextView
+        android:id="@+id/changeLocation"
+        android:layout_width="78.0dip"
+        android:layout_height="30.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/changelocation"
+        android:gravity="center"
+        android:text="My Orders"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        ushop:font="Sansation_Regular.ttf" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Sarvex%20Jatasra/Workspace/ezzy/mobile/src/main/res/layout/myorders_bar.xml -->

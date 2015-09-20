@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbarcolor">#ffffff</color>
+    <color name="divider">#ff0000</color>
+    <color name="selector">#33000000</color>
+    <color name="white90T">#33ffffff</color>
+    <color name="weekly">#5ac86f</color>
+    <color name="monthly">#5770d4</color>
+    <color name="slide_item_background">#434343</color>
+    <color name="slide_item_text">#bfbfbf</color>
+    <color name="actionbarmain">#25ac52</color>
+    <color name="name_list_divider">#cf593d</color>
+    <color name="name_list_text_color">#898989</color>
+    <color name="strike_through_background">#eeeeee</color>
+    <color name="white50T">#80ffffff</color>
+    <color name="white40T">#99ffffff</color>
+    <color name="black50T">#80000000</color>
+    <color name="black80T">#33000000</color>
+    <color name="black10T">#CC000000</color>
+    <color name="hintcolor">#a6a6a6</color>
+    <color name="searchtextcolor">#898989</color>
+    <color name="orange">#ef6c0f</color>
+    <color name="green">#24ac52</color>
+    <color name="darktext">#7e7e7e</color>
+    <color name="adscolor">#bebebe</color>
+    <color name="delivered">#25ac52</color>
+    <color name="cancelled">#ff2200</color>
+    <color name="inprocess">#ff6724</color>
+    <color name="grey">#898989</color>
+
+</resources>
