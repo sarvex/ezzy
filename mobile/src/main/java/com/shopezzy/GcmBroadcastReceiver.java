@@ -14,8 +14,6 @@ public class GcmBroadcastReceiver extends WakefulBroadcastReceiver {
         GcmIntentService.class.getName());
     startWakefulService(context, (intent.setComponent(comp)));
     setResultCode(Activity.RESULT_OK);
-    // Toast.makeText(context, "received new push notification",
-    // Toast.LENGTH_LONG).show();
   }
 
 }

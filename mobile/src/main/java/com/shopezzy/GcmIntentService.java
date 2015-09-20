@@ -109,12 +109,7 @@ public class GcmIntentService extends IntentService {
       Intent notificationIntent = new Intent(this, SplashScreen.class);
       notificationIntent.putExtra(Constants.KEY_PUSH_MESSAGE, message);
 
-      // set intent so it does not start a new activity
       notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-      // PendingIntent intent =
-      // PendingIntent.getActivity(context, 0, notificationIntent,
-      // PendingIntent.FLAG_ONE_SHOT);
-
       PendingIntent intent = PendingIntent.getActivity(this, requestID, notificationIntent, 0);
 
       notification.setLatestEventInfo(this, title, message, intent);
@@ -126,9 +121,6 @@ public class GcmIntentService extends IntentService {
     } catch (Exception e) {
       e.printStackTrace();
     }
-    // notificationManager.notify(0, notification);
-    // notificationManager.notify(i, notification);
-    // i++;
   }
 
   @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
@@ -150,32 +142,14 @@ public class GcmIntentService extends IntentService {
       bigPicutureStyle.bigPicture(bitmap);
       bigPicutureStyle.setBigContentTitle("shopEZZY");
       bigPicutureStyle.setSummaryText(mess);
-      // Intent resultIntent = new Intent(this, SlidingList.class);
       Intent notificationIntent = new Intent(this, SplashScreen.class);
       notificationIntent.putExtra(Constants.KEY_PUSH_MESSAGE, mess);
-      // notificationIntent.putExtra(Consts.KEY_PUSH_MESSAGE, mess);
-      // The stack builder object will contain an artificial back stack
-      // for
-      // the
-      // started Activity.
-      // This ensures that navigating backward from the Activity leads out
-      // of
-      // your application to the Home screen.
       TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
 
-      // Adds the back stack for the Intent (but not the Intent itself)
-      // stackBuilder.addParentStack(SlidingList.class);
-
-      // Adds the Intent that starts the Activity to the top of the stack
       stackBuilder.addNextIntent(notificationIntent);
       PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
       builder.setContentIntent(resultPendingIntent);
 
-      // NotificationManager mNotificationManager = (NotificationManager)
-      // getSystemService(Context.NOTIFICATION_SERVICE);
-      //
-      // // mId allows you to update the notification later on.
-      // mNotificationManager.notify(100, mBuilder.build());
       ((NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE)).notify(01, bigPicutureStyle.build());
 
     } catch (Exception e) {
@@ -206,11 +180,6 @@ public class GcmIntentService extends IntentService {
 
     // Play default notification sound
     notification.defaults |= Notification.DEFAULT_SOUND;
-
-    // //notification.sound = Uri.parse(
-    // "android.resource://"
-    // + context.getPackageName()
-    // + "your_sound_file_name.mp3");
 
     // Vibrate if vibrate is enabled
     notification.defaults |= Notification.DEFAULT_VIBRATE;

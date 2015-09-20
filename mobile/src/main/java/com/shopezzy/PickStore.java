@@ -494,19 +494,9 @@ public class PickStore extends AppCompatActivity {
       viewHolder.name.setText(store.get(position).name);
       viewHolder.address.setText(store.get(position).add);
       viewHolder.minorder.setText("Min. Order");
-      viewHolder.minrs
-          .setText(this.mContext.getResources().getString(R.string.rs) + " " + store.get(position).min);
+      viewHolder.minrs.setText(this.mContext.getResources().getString(R.string.rs) + " " + store.get(position).min);
       viewHolder.delivey.setText("Delivery: " + store.get(position).dtime);
       viewHolder.ratingBar2.setRating(Float.valueOf(store.get(position).rtng));
-
-      // i++;
-      // if (i % 2 == 0) {
-      // if (i == 0)
-      // return rowView;
-      //
-      // viewHolder.layout.setBackgroundColor(getResources().getColor(
-      // R.color.black90T));
-      // }
 
       return rowView;
     }
